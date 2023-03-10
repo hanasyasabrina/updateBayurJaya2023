@@ -9,13 +9,15 @@
           SLIDE 1
             <img :src="require(`../assets/mekanikElektrikal/${index.url}`)"/>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
       </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </div>
     <!-- end swiper -->
 
     <div @click="testClick">CLICK ME</div>
+    <div>test</div>
 
 
     <div class="w-full h-full flex font-extrabold">
@@ -87,7 +89,6 @@ export default {
   background-color: #ffffff;
   width: 100%;
   height: 100%;
-  // padding: 32px;
   
 }
 .swiper-slide {
@@ -101,35 +102,24 @@ export default {
 		transition: all .5s ease-in-out;
 		transform: scale(.8);
 
-		&.swiper-slide-active {
+    &.swiper-slide-active {
       background:gray;
       opacity:1;
       transform: scale(1);
+      z-index: 3;
     }
 
-    img{
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+		
 }
 
 
-.container{ //__, --, -
-  &__kecil{
-    &--biru{
-      color: blue;
-
-      &-tua{
-        color: darkblue;
-      }
-    }
-  }
-  &__besar{
-
-  }
+img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 
 
 </style>
