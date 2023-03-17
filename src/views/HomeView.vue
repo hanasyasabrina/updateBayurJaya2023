@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home relative w-full">
     <div class="bg-white mt-10 w-full h-full">TESSSS HOME BAYUR</div>
     <!-- start swiper -->
     <div class="swiper">
@@ -18,11 +18,7 @@
 
     <div @click="testClick">CLICK ME</div>
     <div>test</div>
-
-
-    <div class="w-full h-full flex font-extrabold">
-      box
-    </div>
+    
     <!-- <div @click="testClick" v-for="(key, index) in dataFoto" :key="key">{{ index.url }}</div> -->
   </div>
 </template>
