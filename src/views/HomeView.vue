@@ -7,7 +7,7 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide" v-for="(index, key) in dataFoto" :key="key">
-            <img :src="require(`../assets/mekanikElektrikal/${index.url}`)"/>
+            <img :src="require(`../assets/homeAssets/${index.url}`)"/>
         </div>
       </div>
       <!-- If we need pagination -->
@@ -15,8 +15,8 @@
     </div>
     <!-- end swiper -->
 
-    <div @click="testClick">
-      <button class="font-inter bg-blue-900 hover:bg-gray-700 text-white py-2 px-4 rounded border-solid border-2 border-black">DOWNLOAD COMPANY PROFILE</button>
+    <div @click="testClick" class="flex justify-center items-center flex-col">
+      <button class="homee--download">DOWNLOAD COMPANY PROFILE</button>
     </div>
 
     <div class="ml-96 pl-46 mr-96 my-8 border-solid border border-blue-900 place-items-right">
@@ -36,20 +36,23 @@
         </div>
       </div>
       </div>
-    <div class="bg-white mt-10 w-full h-full">CLIENTS & PARTNERS</div>
+    
+    <div class="imgPartners flex flex-col justify-center items-center w-full mb-14">
+          <div class="mb-8 text-3xl">CLIENTS & PARTNERS</div>
     <!-- start swiper -->
-    <div class="swiper">
+    <div class="swiper swiper-partners">
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide-2" v-for="(index, key) in dataPartners" :key="key">
-            <img :src="require(`../assets/partners/${index.url}`)"/>
+        <div class="swiper-slide" v-for="(index, key) in dataPartners" :key="key">
+          <img :src="require(`../assets/partners/${index.url}`)"/>
         </div>
-      </div>
-
-      <!-- If we need pagination -->
-      <div class="swiper-navigation"></div>
+      </div>         
     </div>
-    <!-- end swiper -->
+    <div class="w-full h-full relative">
+      <div class="swiper-button-prev swiper-button-prev-partners"></div>
+        <div class="swiper-button-next swiper-button-next-partners"></div>
+    </div>
+    </div>
+            <!-- end swiper -->
     <!-- <div @click="testClick" v-for="(key, index) in dataFoto" :key="key">{{ index.url }}</div> -->
   </div>
 </template>
@@ -70,15 +73,19 @@ export default {
       swiperTest: null,
       dataFoto:[
         {
-          url:"bidang1.png",
-          tag: "mekanikal",
-        },
-        {
-          url:"bidang2.png",
+          url:"CCTV.png",
           tag: "cctv",
         },
         {
-          url:"bidang3.png",
+          url:"HDD BORING.png",
+          tag: "boring",
+        },
+        {
+          url:"MECHANICAL & ELECTRICAL.png",
+          tag: "mekanikal",
+        },
+        {
+          url:"SIPIL.png",
           tag: "sipil",
         }
       ],
@@ -136,22 +143,21 @@ export default {
     testClick(){
       alert('INI HASIL @ KLIK METHOD')
     },
+
     initSwiperPartners(){
       // eslint-disable-next-line
-        this.swiperPartners = new Swiper('.swiper', {
-        loop: false,
-        spaceBetween: -60,
-        autoHeight: false,
-        centeredSlides: true,
-        slidesPerView: 3,
-        autoplay:{
-          delay: 2000
-        },
-        
-        
-
-      });
-    },
+        this.swiperPartners = new Swiper('.swiper-partners', {
+          spaceBetween: 30,
+          autoHeight: false,
+          centeredSlides: true,
+          loop: true,
+          slidesPerView: 3,
+          navigation: {
+            nextEl: ".swiper-button-next-cctv-tes",
+            prevEl: ".swiper-button-prev-cctv-tes"
+          }
+        });
+      },
   },
   mounted(){
     this.initSwiperTest()
@@ -182,13 +188,13 @@ export default {
 		width: 100%;
 		padding: 0;
 		opacity: .8;
-		background:lightgrey;
+		background:white;
 		border-radius: 6px;
 		transition: all .5s ease-in-out;
 		transform: scale(.8);
 
     &.swiper-slide-active {
-      background:gray;
+      background: white;
       opacity:1;
       transform: scale(1);
       z-index: 3;
@@ -196,6 +202,38 @@ export default {
 
 		
 }
+
+.swiper-button-next,.swiper-button-prev{
+    top: -100px;
+  }
+  .swiper-button-next{
+    // position: relative;
+    right: -15px;
+    // top: 20%;
+    &::after{
+      content: "";
+      background-image: url('../assets/ornament/btn-next.png');
+      padding: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+  }
+  .swiper-button-prev{
+    // position: relative;
+    left: -15px;
+    // left: 150px;
+    // top: 20%;
+    &::after{
+      content: "";
+      background-image: url('../assets/ornament/btn-prev.png');
+      padding: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
 .swiper-slide-2 {
 		margin: 32px 0;
@@ -226,9 +264,9 @@ img{
   object-fit: cover;
 }
 
-imgPartners{
-  width: max-w-2xl;
-  height: max-h-fit;
+.imgPartners{
+  margin-top: -1px;
+    background-color: white;
 }
 
 .font{
@@ -236,6 +274,27 @@ imgPartners{
 
 }
 
+.homee{
+  font-family: 'Montserrat, Inter';
+    background-color: white;
+    margin-top: -1px;
+
+    &--download{
+      padding: 20px 64px;
+      background-color: #0E1C4B;
+      transition: 0.5s;
+      color: white;
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 4px;
+      // max-width: 165px;
+      cursor: pointer;
+      &:hover{
+        background-color: #4B0E0E;
+      }
+    }
+}
 
 
 
