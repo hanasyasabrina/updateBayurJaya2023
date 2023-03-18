@@ -82,6 +82,8 @@ export default {
 <style lang="scss" scoped>
 .home{
   background: white;
+  margin-top: -1px;
+
 }
 .swiper{
   background-color: #ffffff;

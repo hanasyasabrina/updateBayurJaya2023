@@ -5,7 +5,7 @@
         <div class="mb-8 text-3xl">Get Our Catalog</div>
         <div class="insider--download">DOWNLOAD COMPANY PROFILE</div>
       </div>
-      <div class="mt-20 flex flex-col items-center justify-center">
+      <div class="insider--catalog mt-20 flex flex-col items-center justify-center">
         <div class="mb-8 text-3xl">Our Story</div>
         <div class="insider__story--text gap-4">
           <p>Berawal dari keinginan untuk menjadi seorang pengusaha agar dapat membuka lapangan pekerjaan untuk orang lain, maka pada tanggal 8 Mei 2008 bapak Sungkono bin Somo Karyono mendirikan perusahaan di Tangerang dan disahkan dengan akta notaris Herry Sosiawan, S.H no. 104 dengan nama </p>
@@ -13,9 +13,9 @@
           <p>Saat ini kami terus meningkatkan dan mengembangkan bidang usaha dengan menambah peralatan kerja sebagai penunjang project yang dipercayakan ke kami serta peningkatan SDM yang berkualitas dan berpengalaman dalam bidangnya masing-masing dan telah tersertifikasi. Atas kepercayaan yang telah diberikan kepada kami di tahun-tahun sebelumnya tentunya menjadi tantangan berat yang harus kami jaga dan tingkatkan untuk dijadikan acuan dalam mewujudkan tujuan kami, yaitu “Menjadi perusahaan Jasa Konstruksi Nasional yang berintegritas dan kredibel berlandaskan layanan dan kualitas hasil pekerjaan yang prima dengan dukungan team kerja yang solid”.</p>
         </div>
       </div>
-      <div class="insider__box mt-20 flex items-center justify-center">
+      <div class="insider__box my-20 flex items-center justify-center">
         <div class="insider__box--image flex" v-for="(index, key) in dataFoto" :key="key">
-          <img :src="require(`../assets/mekanikElektrikal/${index.url}`)"/>
+          <img :src="require(`../assets/gallery/runwayGardu/${index.url}`)"/>
         </div>
       </div> 
 
@@ -31,27 +31,27 @@ export default {
     return{
       dataFoto:[
         {
-          url:"tes1.png",
+          url:"Radar2.jpeg",
           tag: "mekanikal",
         },
         {
-          url:"tes1.png",
+          url:"Thaha.jpeg",
           tag: "sipil",
         },
         {
-          url:"tes1.png",
+          url:"Radar6.jpeg",
           tag: "sipil",
         },
         {
-          url:"tes1.png",
+          url:"rtil3.jpeg",
           tag: "sipil",
         },
         {
-          url:"tes1.png",
+          url:"sqfl2.jpeg",
           tag: "sipil",
         },
         {
-          url:"tes1.png",
+          url:"Thaha3.jpeg",
           tag: "sipil",
         }
       ]
@@ -68,6 +68,22 @@ export default {
 .insider{
   font-family: 'Montserrat, Inter';
   background-color: white;
+  margin-top: -1px;
+
+  &--catalog{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: -120px;
+      left: -180px;
+      background-image: url('../assets/ornament/insider.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 120px;
+    }
+  }
 
   &--download{
     padding: 20px 64px;
@@ -94,16 +110,20 @@ export default {
   }
   &__box{
     flex-wrap: wrap;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 
 
     &--image{
       // flex: 1 1 0;
       width: 30%;
-      height: 200px;
+      height: 100%;
       // background-position: center;
       // background-size: contain;
       // background-repeat: no-repeat;
+      &:hover{
+        transform: scale(1.2);
+      }
     }
 
   }
