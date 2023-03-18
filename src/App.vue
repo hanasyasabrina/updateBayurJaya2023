@@ -81,7 +81,7 @@ export default {
   }
 }
 .router-link-exact-active{
-  border-bottom: 2px solid red;
+  border-bottom: 4px solid #e33c38;
 }
 /* 
 

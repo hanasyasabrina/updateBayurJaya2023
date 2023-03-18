@@ -2,8 +2,8 @@
     <div class="gallery w-full relative px-48"> 
         <!-- mulai dari sini -->
         <!-- CCTV & KABEL JARINGAN -->
-        <div class="flex flex-col justify-center items-center w-full mb-12">
-          <div class="mb-12 text-3xl">CCTV & KABEL JARINGAN</div>
+        <div class="flex flex-col justify-center items-center w-full mb-14">
+          <div class="mb-8 text-3xl">CCTV & KABEL JARINGAN</div>
           <div class="mb-8">
              <!-- start swiper runway -->
             <div class="swiper swiper-cctv">
@@ -25,8 +25,8 @@
         </div>
 
         <!-- RUNWAY & GARDU -->
-        <div class="flex flex-col justify-center items-center w-full mb-12">
-          <div class="mb-12 text-3xl">RUNWAY, GARDU & DPPU</div>
+        <div class="flex flex-col justify-center items-center w-full mb-14">
+          <div class="mb-8 text-3xl">RUNWAY, GARDU & DPPU</div>
           <div class="mb-8">
              <!-- start swiper runway -->
             <div class="swiper swiper-runway">
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="w-full h-full relative">
-              <div class="swiper-button-prev swiper-button-prev-runway"></div>
+              <div class="swiper-button-prev swiper-button-prev "></div>
               <div class="swiper-button-next swiper-button-next-runway"></div>
             </div>
             <!-- end swiper -->
