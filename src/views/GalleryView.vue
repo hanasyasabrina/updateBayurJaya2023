@@ -37,8 +37,8 @@
               </div>
             </div>
             <div class="w-full h-full relative">
-              <div class="swiper-button-prev swiper-button-prev-cctv"></div>
-              <div class="swiper-button-next swiper-button-next-cctv"></div>
+              <div class="swiper-button-prev swiper-button-prev-runway"></div>
+              <div class="swiper-button-next swiper-button-next-runway"></div>
             </div>
             <!-- end swiper -->
           </div>
@@ -154,10 +154,6 @@
           centeredSlides: true,
           loop: true,
           slidesPerView: 3,
-          // If we need pagination
-          // pagination: {
-          //   el: '.swiper-pagination',
-          // },
           navigation: {
             nextEl: ".swiper-button-next-cctv",
             prevEl: ".swiper-button-prev-cctv"
