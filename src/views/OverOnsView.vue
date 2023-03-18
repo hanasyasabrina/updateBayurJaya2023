@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="about insider bg-white w-full h-full flex justify-center items-center flex-col"> 
       <!-- mulai dari sini -->
       <div class="flex justify-center items-center flex-col">
@@ -131,30 +130,3 @@ export default {
   
 }
 </style>
-=======
-    <div class="over-ons"> 
-        <!-- mulai dari sini -->
-    </div>
-  </template>
-  <script>
-  export default {
-    name: 'OverOnsView',
-    components: {
-      // HelloWorld
-    },
-    data(){
-      return{
-  
-      }
-    },
-    methods:{
-  
-    },
-    mounted(){
-    }
-  }
-  </script>
-  <style lang="scss" scoped>
-  
-  </style>
->>>>>>> 7bb3cf2b3b9ffd5237ce2345827de8ab0b9ff83b
