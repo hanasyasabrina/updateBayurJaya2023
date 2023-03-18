@@ -1,11 +1,11 @@
 <template>
-    <div class="gallery"> 
+    <div class="expertise"> 
         <!-- mulai dari sini -->
     </div>
   </template>
   <script>
   export default {
-    name: 'GalleryView',
+    name: 'ExpertiseView',
     components: {
       // HelloWorld
     },

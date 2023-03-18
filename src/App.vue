@@ -6,18 +6,18 @@
         <div>info@bayurjaya.co.id</div>
         <div>+62 21 552 6610</div>
         <div>Tangerang</div>
-        <div><router-link to="/">Contact</router-link></div>
+        <div><router-link to="/contact">Contact</router-link></div>
       </div>
     </div>
     <div class="header__bottom rounded-t-2xl w-full px-6">
-      <nav class="flex flex-row py-16">
-        <div>LOGO</div>
-        <div class="flex ml-auto gap-8">
-          <router-link class="header--active" to="/">Home</router-link>
-          <router-link to="/about">Expertise</router-link>
+      <nav class="flex justify-center items-center flex-row py-6">
+        <div class="header--logo"></div>
+        <div class="flex h-12 ml-auto gap-8">
+          <router-link to="/">Home</router-link>
+          <router-link to="/expertise">Expertise</router-link>
           <router-link to="/gallery">Gallery</router-link>
-          <router-link to="/">Insider</router-link>
-          <router-link to="/">Over ons</router-link>
+          <router-link to="/about">Insider</router-link>
+          <router-link to="/overons">Over ons</router-link>
         </div>
         
       </nav>
@@ -45,9 +45,6 @@ export default {
     }
   },
   methods:{
-    cekClass(){
-      // router-link-active
-    }
   }
 }
 </script>
@@ -60,6 +57,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   /* color: #fff; */
+  background-color: #0A2753;
 }
 .header{
   // background-color: #0A2753;
@@ -73,9 +71,17 @@ export default {
     font-size: 24px;
   }
 
-  &--active{
-    border-bottom: 2px solid red;
+  &--logo{
+    background-image: url('./assets/logo-home.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
   }
+}
+.router-link-exact-active{
+  border-bottom: 2px solid red;
 }
 /* 
 

@@ -1,6 +1,5 @@
 <template>
   <div class="home relative w-full">
-    <div class="bg-white mt-10 w-full h-full">TESSSS HOME BAYUR</div>
     <!-- start swiper -->
     <div class="swiper">
       <div class="swiper-wrapper">
@@ -81,6 +80,9 @@ export default {
 <!-- vue, tailwind, sass, swiper -->
 
 <style lang="scss" scoped>
+.home{
+  background: white;
+}
 .swiper{
   background-color: #ffffff;
   width: 100%;

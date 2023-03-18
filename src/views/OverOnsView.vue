@@ -1,11 +1,11 @@
 <template>
-    <div class="gallery"> 
+    <div class="over-ons"> 
         <!-- mulai dari sini -->
     </div>
   </template>
   <script>
   export default {
-    name: 'GalleryView',
+    name: 'OverOnsView',
     components: {
       // HelloWorld
     },
