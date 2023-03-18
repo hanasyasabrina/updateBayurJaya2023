@@ -1,75 +1,72 @@
 <template>
   <div id="app">
-    <nav class="bg-blue-900 py-4 px-0 grid grid-cols-2 m-0">
-      <div class="font text-left text-white pl-3.5">PT. Bayur Jaya</div>
-      <div class="font text-right text-white pr-6 grid grid-cols-4">
-        <div>
-          <router-link to="/">info@bayurjaya.co.id</router-link>
-        </div>
-        <div>
-          <router-link to="/">+62 21 552 6610</router-link>
-        </div>
-        <div>
-          <router-link to="/">Tangerang</router-link>
-        </div>
-        <div>
-          <router-link to="/">Contact</router-link>
-        </div>  
-        
-      </div>
-    </nav>
-    <nav class="grid grid-cols-2 pl-3.5 rounded-t-xl bg-blend-lighten hover:bg-blend-darken">
+    <nav>
       <div>
-        <img alt="vue logo" src="./assets/Logo-min.png"> <v-spacer />
-      </div>
-      <div class="font text-right text-2xl self-center mr-7 grid grid-cols-6">
-        <div>
-          <router-link class="bg-white" to="/">Home</router-link>
-        </div>
-        <div>
-          <router-link to="/expertise">Expertise</router-link>
-        </div>   
-        <div>
-          <router-link to="/gallery">Gallery</router-link>
-        </div>   
-        <div>
-          <router-link to="/insider">Insider</router-link>
-        </div>
-        <div>
-          <router-link to="/overOns">Over Ons</router-link>
-        </div>
-        <div>
-          <router-link to="/contact">Contact</router-link>
-        </div>  
-        
+        <router-link class="bg-white" to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
       </div>
       
     </nav>
     <router-view/>
     <!-- <home-view></home-view> -->
+    <footer-view/>
   </div>
 </template>
 
 <script>
 // import HomeView from '@/views/HomeView.vue'
+import FooterView from '@/views/FooterView.vue'
 
 export default {
   name: 'MasterVue',
   components: {
     // HelloWorld
     // HomeView
+    FooterView
+  },
+  data(){
+    return{
+
+    }
+  },
+  methods:{
   }
 }
 </script>
 
 
-<style>
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  // text-align: center;
   /* color: #fff; */
+  background-color: #0A2753;
+}
+.header{
+  // background-color: #0A2753;
+
+  &__top{
+    background-color: #0A2753;
+  }
+  &__bottom{
+    background-color: white;
+    font-family: 'Montserrat';
+    font-size: 24px;
+  }
+
+  &--logo{
+    background-image: url('./assets/logo-home.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+  }
+}
+.router-link-exact-active{
+  border-bottom: 2px solid red;
 }
 .holo{
   background-color: rgb(10,39,83);

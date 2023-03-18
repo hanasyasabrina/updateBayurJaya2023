@@ -1,13 +1,13 @@
 <template>
-    <div class="contact">
+    <div class="expertise"> 
         <!-- mulai dari sini -->
     </div>
-</template>
-
-<script>
-export default {
-    name: 'ContactView',
+  </template>
+  <script>
+  export default {
+    name: 'ExpertiseView',
     components: {
+      // HelloWorld
     },
     data(){
       return{
@@ -20,7 +20,7 @@ export default {
     mounted(){
     }
   }
-</script>
-<style lang="scss" scoped>
+  </script>
+  <style lang="scss" scoped>
   
-</style>
+  </style>
