@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery w-full relative px-48"> 
+    <div class="gallery w-full relative px-4 xl:px-48"> 
         <!-- mulai dari sini -->
         <!-- CCTV & KABEL JARINGAN -->
         <div class="flex flex-col justify-center items-center w-full mb-14">
@@ -21,7 +21,9 @@
 
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
+          <div class="text-xl flex items-center text-center">
+            <p>Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</p>
+          </div>
         </div>
 
         <!-- RUNWAY & GARDU -->
@@ -63,7 +65,9 @@
             </div>
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
+          <div class="text-xl flex items-center text-center">
+            <p>Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</p>
+          </div>
         </div>
         <!-- BORING HDD -->
         <div class="flex flex-col justify-center items-center w-full mb-14">
@@ -212,10 +216,23 @@
           centeredSlides: true,
           loop: true,
           slidesPerView: 3,
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
           },
+          // If we need pagination
+          // pagination: {
+          //   el: '.swiper-pagination',
+          // },
           navigation: {
             nextEl: ".swiper-button-next-runway",
             prevEl: ".swiper-button-prev-runway"

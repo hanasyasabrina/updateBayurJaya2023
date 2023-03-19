@@ -1,21 +1,20 @@
 <template>
-  <div class="about insider bg-white w-full h-full flex justify-center items-center flex-col"> 
+  <div class="over-ons px-4 xl:px-0 bg-white w-full h-full flex justify-center items-center flex-col"> 
       <!-- mulai dari sini -->
       <div class="flex justify-center items-center flex-col">
-        <div class="mb-8 text-3xl">Get Our Catalog</div>
-        <div class="insider--download">DOWNLOAD COMPANY PROFILE</div>
+        <div class="over-ons--title text-center mb-8 text-3xl">Sewa Mesin Boring HDD</div>
+        <div class="over-ons--download">CALL FOR RENTAL</div>
       </div>
-      <div class="insider--catalog mt-20 flex flex-col items-center justify-center">
-        <div class="mb-8 text-3xl">Our Story</div>
-        <div class="insider__story--text gap-4">
-          <p>Berawal dari keinginan untuk menjadi seorang pengusaha agar dapat membuka lapangan pekerjaan untuk orang lain, maka pada tanggal 8 Mei 2008 bapak Sungkono bin Somo Karyono mendirikan perusahaan di Tangerang dan disahkan dengan akta notaris Herry Sosiawan, S.H no. 104 dengan nama </p>
-          <p>CV. Bayur Jaya yang bergerak dibidang usaha Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum. Dengan ketekunan disertai kerja keras dan komitmen beliau yang tinggi maka pada tanggal 18 November 2011 CV. Bayur Jaya ditingkatkan statusnya menjadi  PT. Bayur Jaya dan disahkan dengan akta notaris Herry Sosiawan, S.H no. 152. Berbekal dengan ijin usaha dan kepercayaan yang diberikan oleh klien dan partner, kami terus berupaya meningkatkan kualitas, efektifitas dan efisiensi serta meningkatkan standar pelayanan kerja. Seiring dengan kemajuan teknologi dan tuntutan pelanggan serta persaingan yang sangat kompetitif dalam perusahaan jasa konstruksi kami menerapkan Standar Mutu ISO sejak tahun 2011.</p>
-          <p>Saat ini kami terus meningkatkan dan mengembangkan bidang usaha dengan menambah peralatan kerja sebagai penunjang project yang dipercayakan ke kami serta peningkatan SDM yang berkualitas dan berpengalaman dalam bidangnya masing-masing dan telah tersertifikasi. Atas kepercayaan yang telah diberikan kepada kami di tahun-tahun sebelumnya tentunya menjadi tantangan berat yang harus kami jaga dan tingkatkan untuk dijadikan acuan dalam mewujudkan tujuan kami, yaitu “Menjadi perusahaan Jasa Konstruksi Nasional yang berintegritas dan kredibel berlandaskan layanan dan kualitas hasil pekerjaan yang prima dengan dukungan team kerja yang solid”.</p>
+      <div class="over-ons--catalog mt-20 flex flex-col items-center justify-center">
+        <div>VIDEO</div>
+      </div>
+      <div class="over-ons__box my-20 flex items-center justify-center">
+        <div class="over-ons__story--text text-base gap-4">
+          <p>Kami menyediakan jasa pelayanan sewa mesin bor HDD yang dapat digunakan untuk pemasangan jaringan kabel optik / listrik, pipa HDPE atau PE dan lainnya. Dengan menggunakan mesin bor HDD ini maka tidak perlu dilakukan penggalian jalan atau bangunan yang akan dilewati jalur instalasi kabel/pipa, sehingga dapat menghemat waktu dan biaya karena tidak memerlukan banyak tenaga manusia untuk melakukan penggalian sebagaimana pemasangan instalasi jaringan kabel/pipa secara manual.</p>
+          <p>Kami akan memberikan dukungan penuh dengan tenaga ahli dan peralatan yang telah dilengkapi dengan Surat Ijin Operator (SIO) dan Surat Ijin Laik Operasi (SILO) dari Instansi terkait.</p>
         </div>
-      </div>
-      <div class="insider__box my-20 flex items-center justify-center">
-        <div class="insider__box--image flex" v-for="(index, key) in dataFoto" :key="key">
-          <img :src="require(`../assets/gallery/runwayGardu/${index.url}`)"/>
+        <div class="over-ons__box--image flex">
+          <img :src="require(`../assets/over-ons-hdd.png`)"/>
         </div>
       </div> 
 
@@ -23,7 +22,7 @@
 </template>
 <script>
 export default {
-  name: 'AboutView',
+  name: 'OverOnsView',
   components: {
     // HelloWorld
   },
@@ -65,24 +64,31 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.insider{
+@mixin smartphone {
+    @media (max-width: 599px) { @content; }
+  }
+.over-ons{
   font-family: 'Montserrat, Inter';
   background-color: white;
   margin-top: -1px;
 
+  &--title{
+    font-family: 'Montserrat';
+  }
+
   &--catalog{
     position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: -120px;
-      left: -180px;
-      background-image: url('../assets/ornament/insider.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 150px;
-      height: 120px;
-    }
+    // &:before{
+    //   content: "";
+    //   position: absolute;
+    //   top: -120px;
+    //   left: -180px;
+    //   background-image: url('../assets/ornament/insider.png');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   width: 150px;
+    //   height: 120px;
+    // }
   }
 
   &--download{
@@ -90,18 +96,23 @@ export default {
     background-color: #0E1C4B;
     transition: 0.5s;
     color: white;
-    font-family: 'Inter';
+    font-family: 'Cabin';
     font-weight: 700;
     font-size: 18px;
     border-radius: 4px;
-    // max-width: 165px;
+    letter-spacing: 4px;
     cursor: pointer;
+    @include smartphone{
+      padding: 20px 48px;
+      text-align: center;
+    }
     &:hover{
       background-color: #4B0E0E;
     }
   }
   &__story{
     &--text{
+      font-family: 'Cabin';
       max-width: 1000px;
       p{
         margin-bottom: 12px;
@@ -115,12 +126,8 @@ export default {
 
 
     &--image{
-      // flex: 1 1 0;
-      width: 30%;
+      width: 80%;
       height: 100%;
-      // background-position: center;
-      // background-size: contain;
-      // background-repeat: no-repeat;
       &:hover{
         transform: scale(1.2);
       }
