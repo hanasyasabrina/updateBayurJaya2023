@@ -61,6 +61,7 @@
   
     },
     mounted(){
+      console.log("ini insider")
     }
   }
   </script>
