@@ -1,11 +1,9 @@
 <template>
-<<<<<<< HEAD
-  <div class="home">
+
+  <div class="home relative w-full">
     <div class="font text-5xl w-full h-full flex justify-center font-extrabold">Build On Safety Is Our Foundation</div>
     <div class="font mx-80 flex text-center text-sm justify-center py-3">Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</div>
-=======
-  <div class="home relative w-full">
->>>>>>> 7bb3cf2b3b9ffd5237ce2345827de8ab0b9ff83b
+
     <!-- start swiper -->
     <div class="swiper">
       <div class="swiper-wrapper">
@@ -19,7 +17,6 @@
     </div>
     <!-- end swiper -->
 
-<<<<<<< HEAD
     <div @click="testClick">
       <button class="font-inter bg-blue-900 hover:bg-gray-700 text-white py-2 px-4 rounded border-solid border-2 border-black">DOWNLOAD COMPANY PROFILE</button>
     </div>
@@ -59,11 +56,6 @@
     <div class="w-full h-full flex font-extrabold">
       box
     </div>
-=======
-    <div @click="testClick">CLICK ME</div>
-    <div>test</div>
-    
->>>>>>> 7bb3cf2b3b9ffd5237ce2345827de8ab0b9ff83b
     <!-- <div @click="testClick" v-for="(key, index) in dataFoto" :key="key">{{ index.url }}</div> -->
   </div>
 </template>
