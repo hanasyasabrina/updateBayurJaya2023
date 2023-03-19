@@ -1,7 +1,7 @@
 <template>
   <div class="over-ons px-4 xl:px-0 bg-white w-full h-full flex justify-center items-center flex-col"> 
       <!-- mulai dari sini -->
-      <div class="flex justify-center items-center flex-col">
+      <div class="over-ons--catalog3 flex justify-center items-center flex-col">
         <div class="over-ons--title text-center mb-8 text-3xl">Sewa Mesin Boring HDD</div>
         <div class="over-ons--download">CALL FOR RENTAL</div>
       </div>
@@ -9,6 +9,8 @@
         <div>VIDEO</div>
       </div>
       <div class="over-ons__box my-20 flex items-center justify-center">
+        <div class="over-ons--catalog4"></div>
+        <div class="over-ons--catalog5"></div> 
         <div class="over-ons__story--text text-base gap-4">
           <p>Kami menyediakan jasa pelayanan sewa mesin bor HDD yang dapat digunakan untuk pemasangan jaringan kabel optik / listrik, pipa HDPE atau PE dan lainnya. Dengan menggunakan mesin bor HDD ini maka tidak perlu dilakukan penggalian jalan atau bangunan yang akan dilewati jalur instalasi kabel/pipa, sehingga dapat menghemat waktu dan biaya karena tidak memerlukan banyak tenaga manusia untuk melakukan penggalian sebagaimana pemasangan instalasi jaringan kabel/pipa secara manual.</p>
           <p>Kami akan memberikan dukungan penuh dengan tenaga ahli dan peralatan yang telah dilengkapi dengan Surat Ijin Operator (SIO) dan Surat Ijin Laik Operasi (SILO) dari Instansi terkait.</p>
@@ -17,9 +19,6 @@
           <img :src="require(`../assets/over-ons-hdd.png`)"/>
         </div>
       </div>
-      <div class="insider__box insider__box--image my-20 flex items-center justify-center">
-          <img :src="require(`../assets/gallery/boringHDD/boringhdd.png`)"/>
-      </div> 
 
   </div>
 </template>
@@ -81,41 +80,26 @@ export default {
 
   &--catalog{
     position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: -120px;
-    //   left: -180px;
-    //   background-image: url('../assets/ornament/insider.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 150px;
-    //   height: 120px;
-    // }
-  }
-
-    &--catalog2{
-    position: relative;
     &:before{
       content: "";
       position: absolute;
-      top: 200px;
-      left: -520px;
+      top: -70px;
+      left: -650px;
       background-image: url('../assets/ornament/insider2.png');
       background-repeat: no-repeat;
       background-size: contain;
       width: 50px;
       height: 350px;
-      }
     }
+  }
 
     &--catalog3{
     position: relative;
     &:before{
       content: "";
       position: absolute;
-      top: 260px;
-      left: 1063px;
+      top: 620px;
+      left: 750px;
       background-image: url('../assets/ornament/insider3.png');
       background-repeat: no-repeat;
       background-size: contain;
@@ -144,8 +128,8 @@ export default {
     &:before{
       content: "";
       position: absolute;
-      top: 1385px;
-      left: -380px;
+      top: 500px;
+      left: -30px;
       background-image: url('../assets/ornament/insider5.png');
       background-repeat: no-repeat;
       background-size: contain;
