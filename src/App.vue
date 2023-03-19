@@ -1,12 +1,27 @@
 <template>
-  <div id="app">
-    <nav>
-      <div>
-        <router-link class="bg-white" to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+  <div id="app" class="header w-full h-full">
+    <div class="header__top h-full rounded-t-2xl w-full text-white flex flex-row px-6">
+      <div class="flex justify-center py-4 font-bold">PT. Bayur Jaya</div>
+      <div class="flex flex-row ml-auto py-4 gap-10">
+        <div>info@bayurjaya.co.id</div>
+        <div>+62 21 552 6610</div>
+        <div>Tangerang</div>
+        <div><router-link to="/contact">Contact</router-link></div>
       </div>
-      
-    </nav>
+    </div>
+    <div class="header__bottom rounded-t-2xl w-full px-6">
+      <nav class="flex justify-center items-center flex-row py-6">
+        <div class="header--logo"></div>
+        <div class="flex h-12 ml-auto gap-8">
+          <router-link to="/">Home</router-link>
+          <router-link to="/expertise">Expertise</router-link>
+          <router-link to="/gallery">Gallery</router-link>
+          <router-link to="/about">Insider</router-link>
+          <router-link to="/overons">Over ons</router-link>
+        </div>
+        
+      </nav>
+    </div>
     <router-view/>
     <!-- <home-view></home-view> -->
     <footer-view/>
@@ -66,17 +81,7 @@ export default {
   }
 }
 .router-link-exact-active{
-  border-bottom: 2px solid red;
-}
-.holo{
-  background-color: rgb(10,39,83);
-  overflow: hidden;
-  padding: 0;
-}
-
-.font{
-  font-family: 'Montserrat';
-
+  border-bottom: 4px solid #e33c38;
 }
 /* 
 
