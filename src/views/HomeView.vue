@@ -1,8 +1,9 @@
 <template>
   <div class="home relative w-full">
-    <div class="flex flex-col justify-center items-center w-full mb-14 homee--catalog">
-          <div class="font mb-8 text-5xl max-w-5xl h-16 not-italic font-bold">Build On Safety Is Our Foundation</div>
-          <div class="font-isi absolute max-w-screen-lg h-14 left-64 right-64 not-italic font-normal text-base top-14 text-center">Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</div>
+    <div class="home--catalog flex flex-col justify-center items-center w-full mb-14">
+      <div class="home--catalog2"></div>
+          <div class="home--title mb-8 text-5xl max-w-5xl h-16 not-italic font-bold">Build On Safety Is Our Foundation</div>
+          <div class="home--title_isi absolute max-w-screen-lg h-14 left-64 right-64 not-italic font-normal text-base top-14 text-center">Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</div>
     </div>
     <!-- start swiper -->
     <div class="swiper">
@@ -17,22 +18,19 @@
     </div>
     <!-- end swiper -->
 
-    <div @click="testClick" class="items-center justify-center">
-      <button class="homee--download items-center justify-center">DOWNLOAD COMPANY PROFILE</button>
-    </div>
+    <div @click="testClick" class="flex justify-center items-center flex-col">
+          <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
+        </div>
+    <div class="home--catalog3">  </div>
 
-    <div class="ml-96 pl-46 mr-96 my-8 border-solid border border-blue-900 place-items-right">
-
-    </div>
-
-    <div class="max-w-screen-md w-fit lg:max-w-screen-md lg:flex my-8 place-items-center mx-80">
-    <div class="col-span-1 flex-none bg-cover object-contain rounded-xl rounded-t-xl rounded-b-xl h-72 w-48 overflow-hidden place-items-center">
+    <div class="max-w-screen-md w-fit lg:max-w-screen-md lg:flex my-10 place-items-center ml-56 mr-40 py-7 inset-y-56">
+    <div class="img--owner col-span-1 flex-none bg-cover object-contain rounded-xl rounded-t-xl rounded-b-xl overflow-hidden place-items-center">
       <img :src="require('../assets/owner-min.png')">
       </div>
-    <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col place-items-center leading-normal">
-        <div class="mb-8 ml-3">
-          <div class="font text-gray-900 font-bold text-6xl mb-2 text-left">Sungkono</div>
-            <p class="font font-bold text-gray-400 text-left text-2xl">Owner</p>
+    <div class="home--catalog4 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col place-items-center leading-normal">
+        <div class="mb-7 ml-6">
+          <div class="home--title text-gray-900 font-bold text-6xl text-left">Sungkono</div>
+            <p class="home--title font-bold text-gray-400 text-left text-2xl mt-16">Owner</p>
             <p class="border-solid border border-blue-900"></p>
             <p class="text-gray-700 text-base text-left">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</p>
         </div>
@@ -42,7 +40,7 @@
     <div class="imgPartners flex flex-col justify-center items-center w-full mb-14">
           <div class="mb-8 text-3xl">CLIENTS & PARTNERS</div>
     <!-- start swiper -->
-    <div class="swiper swiper-partners">
+    <div class="swiper2 swiper-partners">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(index, key) in dataPartners" :key="key">
           <img :src="require(`../assets/partners/${index.url}`)"/>
@@ -124,46 +122,46 @@ export default {
           url:"partners-8.png",
           tag:"partners",
         },
-        {
-          url:"partners-9.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-10.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-11.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-12.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-13.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-14.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-15.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-16.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-17.png",
-          tag:"partners",
-        },
-        {
-          url:"partners-18.png",
-          tag:"partners",
-        }
+        // {
+        //   url:"partners-9.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-10.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-11.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-12.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-13.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-14.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-15.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-16.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-17.png",
+        //   tag:"partners",
+        // },
+        // {
+        //   url:"partners-18.png",
+        //   tag:"partners",
+        // }
       ]
     }
   },
@@ -201,8 +199,8 @@ export default {
           loop: true,
           slidesPerView: 3,
           navigation: {
-            nextEl: ".swiper-button-next-cctv-tes",
-            prevEl: ".swiper-button-prev-cctv-tes"
+            nextEl: ".swiper-button-next-partners",
+            prevEl: ".swiper-button-prev-partners"
           }
         });
       },
@@ -220,12 +218,100 @@ export default {
 
 <style lang="scss" scoped>
 .home{
+  font-family: 'Montserrat, Inter';
   background: white;
   margin-top: -1px;
 
+  &--title{
+      font-family: 'Montserrat';
+    }
+
+  &--title_isi{
+     font-family: 'Cabin';
+   }
+
+  &--download{
+      padding: 20px 64px;
+      background-color: #0E1C4B;
+      transition: 0.5s;
+      color: white;
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 4px;
+      // max-width: 165px;
+      cursor: pointer;
+      &:hover{
+        background-color: #4B0E0E;
+      }
+    }
+
+    &--catalog{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 1180px;
+      background-image: url('../assets/ornament/insider7.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 152.02px;
+      height: 158.76px;
+      }
+    }
+
+    &--catalog2{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 570px;
+      left: -720px;
+      background-image: url('../assets/ornament/insider3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 154px;
+      height: 360px;
+      transform: rotate(180deg);
+      }
+    }
+
+    &--catalog3{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 620px;
+      background-image: url('../assets/ornament/insider2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 8px;
+      height: 396px;
+      transform: rotate(90deg);
+      }
+    }
+
+    &--catalog4{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 660px;
+      background-image: url('../assets/ornament/insider.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 206px;
+      height: 172px;
+      transform: rotate(180deg);
+      }
+    }
+
 }
 .swiper{
-  background-color: #ffffff;
+  //background-color: #ffffff;
   width: 100%;
   height: 100%;
   
@@ -250,6 +336,10 @@ export default {
 
 		
 }
+
+.swiper2{
+    max-width: 800px;
+  }
 
 .swiper-button-next,.swiper-button-prev{
     top: -100px;
@@ -310,6 +400,11 @@ img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  &--owner{
+    height: 1035;
+    width: 722;
+  }
 }
 
 .imgPartners{
@@ -325,57 +420,7 @@ img{
   font-family: 'Cabin';
 }
 
-.homee{
-  font-family: 'Montserrat, Inter';
-    background-color: white;
-    margin-top: -1px;
 
-    &--download{
-      padding: 20px 64px;
-      background-color: #0E1C4B;
-      transition: 0.5s;
-      color: white;
-      font-family: 'Inter';
-      font-weight: 700;
-      font-size: 18px;
-      border-radius: 4px;
-      // max-width: 165px;
-      cursor: pointer;
-      &:hover{
-        background-color: #4B0E0E;
-      }
-    }
-
-    &--catalog{
-    position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: 200px;
-      left: -520px;
-      background-image: url('../assets/ornament/insider6.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 50px;
-      height: 350px;
-      }
-    }
-
-    &--catalog2{
-    position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: 200px;
-      left: -520px;
-      background-image: url('../assets/ornament/insider5.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 50px;
-      height: 350px;
-      }
-    }
-}
 
 
 
