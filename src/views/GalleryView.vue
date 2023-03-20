@@ -3,7 +3,7 @@
         <!-- mulai dari sini -->
         <!-- CCTV & KABEL JARINGAN -->
         <div class="flex flex-col justify-center items-center w-full mb-14">
-          <div class="mb-8 text-3xl">CCTV & KABEL JARINGAN</div>
+          <div class="mb-8 text-3xl text-center">CCTV & KABEL JARINGAN</div>
           <div class="mb-8">
              <!-- start swiper runway -->
             <div class="swiper swiper-cctv">
@@ -28,7 +28,7 @@
 
         <!-- RUNWAY & GARDU -->
         <div class="flex flex-col justify-center items-center w-full mb-14">
-          <div class="mb-8 text-3xl">RUNWAY, GARDU & DPPU</div>
+          <div class="mb-8 text-3xl text-center">RUNWAY, GARDU & DPPU</div>
           <div class="mb-8">
              <!-- start swiper runway -->
             <div class="swiper swiper-runway">
@@ -87,7 +87,7 @@
             </div>
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
+          <div class="text-xl flex items-center text-center mb-8">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
         </div>
        
     </div>
@@ -211,14 +211,15 @@
       initSwiperRunway(){
       // eslint-disable-next-line
         this.swiperRunway = new Swiper('.swiper-runway', {
-          spaceBetween: 30,
+          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          // slidesPerView: 3,
           breakpoints: {
             480: {
               slidesPerView: 1.3,
+              spaceBetween: 25
             },
             768: {
               slidesPerView: 3,
@@ -242,11 +243,25 @@
       initSwiperCCTV(){
       // eslint-disable-next-line
         this.swiperCCTV = new Swiper('.swiper-cctv', {
-          spaceBetween: 30,
+          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          // slidesPerView: 3,
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+              spaceBetween: 25
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
+          },
           navigation: {
             nextEl: ".swiper-button-next-cctv",
             prevEl: ".swiper-button-prev-cctv"
@@ -256,11 +271,25 @@
       initSwiperSipil(){
       // eslint-disable-next-line
         this.swiperSipil = new Swiper('.swiper-sipil', {
-          spaceBetween: 30,
+          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          // slidesPerView: 3,
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+              spaceBetween: 25
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
+          },
           navigation: {
             nextEl: ".swiper-button-next-sipil",
             prevEl: ".swiper-button-prev-sipil"
@@ -270,11 +299,25 @@
       initSwiperHdd(){
       // eslint-disable-next-line
         this.swiperHDD = new Swiper('.swiper-hdd', {
-          spaceBetween: 30,
+          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          // slidesPerView: 3,
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+              spaceBetween: 25
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
+          },
           navigation: {
             nextEl: ".swiper-button-next-hdd",
             prevEl: ".swiper-button-prev-hdd"
@@ -291,12 +334,23 @@
   }
   </script>
   <style lang="scss" scoped>
+   @mixin smartphone {
+    @media (max-width: 599px) { @content; }
+  }
   .gallery{
     margin-top: -1px;
     background-color: white;
   }
   .swiper{
     max-width: 1000px;
+    @include smartphone{
+      max-width: 300px;
+    }
+  }
+  .swiper-slide{
+    &:hover{
+      transform: scale(1.4);
+    }
   }
   .swiper-button-next,.swiper-button-prev{
     top: -100px;
@@ -312,6 +366,9 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      @include smartphone{
+        padding: 75%;
+      }
       
     }
   }
@@ -327,6 +384,9 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      @include smartphone{
+        padding: 75%;
+      }
     }
   }
   </style>

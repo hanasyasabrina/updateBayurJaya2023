@@ -1,12 +1,11 @@
 <template>
   <div class="home relative w-full">
     <div class="home--catalog flex flex-col justify-center items-center w-full mb-14">
-      <div class="home--catalog2"></div>
-          <div class="home--title mb-8 text-5xl max-w-5xl h-16 not-italic font-bold">Build On Safety Is Our Foundation</div>
-          <div class="home--title_isi absolute max-w-screen-lg h-14 left-64 right-64 not-italic font-normal text-base top-14 text-center">Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</div>
+          <div class="home--title mb-8 text-5xl max-w-5xl not-italic font-bold">Build On Safety Is Our Foundation</div>
+          <div class="home--title_isi w-full flex max-w-screen-lg font-normal text-base text-center"><p>Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</p></div>
     </div>
     <!-- start swiper -->
-    <div class="swiper">
+    <div class="swiper swiper-home">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide" v-for="(index, key) in dataFoto" :key="key">
@@ -18,39 +17,39 @@
     </div>
     <!-- end swiper -->
 
-    <div @click="testClick" class="flex justify-center items-center flex-col">
+    <div @click="testClick" class="flex justify-center items-center flex-col mt-8">
           <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
         </div>
-    <div class="home--catalog3">  </div>
-
-    <div class="max-w-screen-md w-fit lg:max-w-screen-md lg:flex my-10 place-items-center ml-56 mr-40 py-7 inset-y-56">
-    <div class="img--owner col-span-1 flex-none bg-cover object-contain rounded-xl rounded-t-xl rounded-b-xl overflow-hidden place-items-center">
-      <img :src="require('../assets/owner-min.png')">
-      </div>
-    <div class="home--catalog4 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col place-items-center leading-normal">
-        <div class="mb-7 ml-6">
-          <div class="home--title text-gray-900 font-bold text-6xl text-left">Sungkono</div>
-            <p class="home--title font-bold text-gray-400 text-left text-2xl mt-16">Owner</p>
-            <p class="border-solid border border-blue-900"></p>
-            <p class="text-gray-700 text-base text-left">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</p>
+    <div class="home--catalog3 relative w-full">
+      <div class="max-w-screen-md w-fit lg:max-w-screen-md lg:flex my-10 place-items-center ml-56 mr-40 py-7 inset-y-56">
+      <div class="img--owner col-span-1 flex-none bg-cover object-contain rounded-xl rounded-t-xl rounded-b-xl overflow-hidden place-items-center">
+        <img :src="require('../assets/owner-min.png')">
+        </div>
+      <div class="home--catalog4 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col place-items-center leading-normal">
+          <div class="mb-7 ml-6">
+            <div class="home--title text-gray-900 font-bold text-6xl text-left">Sungkono</div>
+              <p class="home--title font-bold text-gray-400 text-left text-2xl mt-16">Owner</p>
+              <p class="border-solid border border-blue-900"></p>
+              <p class="text-gray-700 text-base text-left">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</p>
+          </div>
         </div>
       </div>
-      </div>
+    </div>
     
     <div class="imgPartners flex flex-col justify-center items-center w-full mb-14">
-          <div class="mb-8 text-3xl">CLIENTS & PARTNERS</div>
-    <!-- start swiper -->
-    <div class="swiper2 swiper-partners">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="(index, key) in dataPartners" :key="key">
-          <img :src="require(`../assets/partners/${index.url}`)"/>
-        </div>
-      </div>         
-    </div>
-    <div class="w-full h-full relative">
-      <div class="swiper-button-prev swiper-button-prev-partners"></div>
+      <div class="home--title_isi mb-8 text-3xl">CLIENTS & PARTNERS</div>
+      <!-- start swiper -->
+      <div class="swiper swiper2 swiper-partners">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="(index, key) in dataPartners" :key="key">
+            <img :src="require(`../assets/partners/${index.url}`)"/>
+          </div>
+        </div>         
+      </div>
+      <div class="w-full h-full relative">
+        <div class="swiper-button-prev swiper-button-prev-partners"></div>
         <div class="swiper-button-next swiper-button-next-partners"></div>
-    </div>
+      </div>
     </div>
   </div>
 </template>
@@ -170,12 +169,12 @@ export default {
   methods:{
     initSwiperTest(){
       // eslint-disable-next-line
-        this.swiperTest = new Swiper('.swiper', {
-        loop: false,
-        spaceBetween: -60,
-        autoHeight: false,
+        this.swiperTest = new Swiper('.swiper-home', {
+        // autoHeight: false,
         centeredSlides: true,
         slidesPerView: 3,
+        spaceBetween: -80,
+        loop: false,
         autoplay:{
           delay: 2000
         },
@@ -197,7 +196,7 @@ export default {
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          slidesPerView: 5.3,
           navigation: {
             nextEl: ".swiper-button-next-partners",
             prevEl: ".swiper-button-prev-partners"
@@ -228,6 +227,7 @@ export default {
 
   &--title_isi{
      font-family: 'Cabin';
+     letter-spacing: 4px;
    }
 
   &--download{
@@ -239,6 +239,8 @@ export default {
       font-weight: 700;
       font-size: 18px;
       border-radius: 4px;
+      font-family: 'Cabin';
+      letter-spacing: 4px;
       // max-width: 165px;
       cursor: pointer;
       &:hover{
@@ -326,6 +328,9 @@ export default {
 		border-radius: 6px;
 		transition: all .5s ease-in-out;
 		transform: scale(.8);
+    img{
+      object-fit: contain;
+    }
 
     &.swiper-slide-active {
       background: white;
@@ -338,7 +343,7 @@ export default {
 }
 
 .swiper2{
-    max-width: 800px;
+    max-width: 1200px;
   }
 
 .swiper-button-next,.swiper-button-prev{
@@ -346,7 +351,7 @@ export default {
   }
   .swiper-button-next{
     // position: relative;
-    right: -15px;
+    right: 50px;
     // top: 20%;
     &::after{
       content: "";
@@ -360,7 +365,7 @@ export default {
   }
   .swiper-button-prev{
     // position: relative;
-    left: -15px;
+    left: 50px;
     // left: 150px;
     // top: 20%;
     &::after{
@@ -384,10 +389,10 @@ export default {
 		transition: all .5s ease-in-out;
 		transform: scale(.8);
 
-    &.swiper-slide-active-2 {
+    &.swiper-slide-active {
       background:white;
       opacity:1;
-      transform: scale(1);
+      // transform: scale(1);
       z-index: 3;
     }
 
