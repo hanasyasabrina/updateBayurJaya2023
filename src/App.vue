@@ -12,7 +12,7 @@
     <div class="header__bottom rounded-t-2xl w-full px-6">
       <nav class="flex justify-center items-center flex-row py-6">
         <div class="header--logo"></div>
-        <div class="flex h-20 xl:h-12 xl:ml-auto gap-8 menu-scroll-mobile text-sm xl:text-base items-center">
+        <div class="flex h-20 xl:h-12 xl:ml-auto gap-8 menu-scroll-mobile text-base xl:text-xl items-center">
           <router-link to="/">Home</router-link>
           <router-link to="/expertise">Expertise</router-link>
           <router-link to="/gallery">Gallery</router-link>
@@ -71,7 +71,7 @@ export default {
   &__bottom{
     background-color: white;
     font-family: 'Montserrat';
-    font-size: 24px;
+    // font-size: 24px;
   }
 
   &--logo{
