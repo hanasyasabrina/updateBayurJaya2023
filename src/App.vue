@@ -85,9 +85,9 @@ export default {
 }
 .router-link-exact-active{
   border-bottom: 4px solid #e33c38;
+  padding: 4px;
   @include smartphone{
     border-bottom: 2px solid #e33c38;
-    padding: 4px;
   }
 }
 

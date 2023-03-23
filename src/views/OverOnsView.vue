@@ -80,63 +80,63 @@ export default {
 
   &--catalog{
     position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: -70px;
-      left: -650px;
-      background-image: url('../assets/ornament/insider2.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 50px;
-      height: 350px;
-    }
+    // &:before{
+    //   content: "";
+    //   position: absolute;
+    //   top: -70px;
+    //   left: -650px;
+    //   background-image: url('../assets/ornament/insider2.png');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   width: 50px;
+    //   height: 350px;
+    // }
   }
 
     &--catalog3{
     position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: 620px;
-      left: 750px;
-      background-image: url('../assets/ornament/insider3.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 154px;
-      height: 360px;
-      }
+    // &:before{
+    //   content: "";
+    //   position: absolute;
+    //   top: 620px;
+    //   left: 750px;
+    //   background-image: url('../assets/ornament/insider3.png');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   width: 154px;
+    //   height: 360px;
+    //   }
     }
 
     &--catalog4{
     position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: 490px;
-      left: -40px;
-      background-image: url('../assets/ornament/insider4.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 32px;
-      height: 32px;
-      }
+    // &:before{
+    //   content: "";
+    //   position: absolute;
+    //   top: 490px;
+    //   left: -40px;
+    //   background-image: url('../assets/ornament/insider4.png');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   width: 32px;
+    //   height: 32px;
+    //   }
     }
 
     &--catalog5{
     position: relative;
-    &:before{
-      content: "";
-      position: absolute;
-      top: 500px;
-      left: -30px;
-      background-image: url('../assets/ornament/insider5.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 61.98px;
-      height: 61.98px;
-      transform: rotate(10.5deg);
-      }
+    // &:before{
+    //   content: "";
+    //   position: absolute;
+    //   top: 500px;
+    //   left: -30px;
+    //   background-image: url('../assets/ornament/insider5.png');
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   width: 61.98px;
+    //   height: 61.98px;
+    //   transform: rotate(10.5deg);
+    //   }
     }
 
   &--download{

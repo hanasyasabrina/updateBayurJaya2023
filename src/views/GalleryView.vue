@@ -21,7 +21,7 @@
 
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center">
+          <div class="text-xl flex items-center text-center max-w-5xl">
             <p>Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</p>
           </div>
         </div>
@@ -44,7 +44,7 @@
             </div>
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center">Pekerjaan Penggantian Peralatan Sequence Flashing Light (SQFL) di Bandara Internasional Minangkabau dari konfigurasi 30 unit baru di ujung runway 33. Pekerjaan lainnya Apron Flood Light yang dilengkapi dengan penangkal petir dan obstruction light, sehingga dapat terlihat dari service road untuk memudahkan maintenance dikemudian hari.</div>
+          <div class="text-xl flex items-center text-center max-w-5xl">Pekerjaan Penggantian Peralatan Sequence Flashing Light (SQFL) di Bandara Internasional Minangkabau dari konfigurasi 30 unit baru di ujung runway 33. Pekerjaan lainnya Apron Flood Light yang dilengkapi dengan penangkal petir dan obstruction light, sehingga dapat terlihat dari service road untuk memudahkan maintenance dikemudian hari.</div>
         </div>
 
         <!-- SIPIL & TENAGA -->
@@ -65,7 +65,7 @@
             </div>
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center">
+          <div class="text-xl flex items-center text-center max-w-5xl">
             <p>Salah satu kerja Sipil yang dikerjakan Bayur Jaya adalah Pembangunan Rumah Hunian Cluster LaVerde Serpong Park di Kota Tangerang Selatan dan Intstalasi Gardu T.03, T.08 dan T.10 Terminal 3 Bandara Internasional Soekarno-Hatta.</p>
           </div>
         </div>
@@ -87,7 +87,7 @@
             </div>
             <!-- end swiper -->
           </div>
-          <div class="text-xl flex items-center text-center mb-8">Kami menyediakan jasa pelayanan sewa mesin bor HDD yang dapat digunakan untuk pemasangan jaringan kabel optik / listrik, pipa HDPE atau PE dan lainnya. Dengan menggunakan mesin bor HDD ini tidak perlu dilakukan penggalian jalan atau bangunan yang akan dilewati jalur instalasi kabel/pipa, sehingga dapat menghemat waktu dan biaya karena tidak memerlukan banyak tenaga manusia untuk melakukan penggalian sebagaimana pemasangan instalasi jaringan kabel/pipa secara manual.</div>
+          <div class="text-xl flex items-center text-center mb-8 max-w-5xl">Kami menyediakan jasa pelayanan sewa mesin bor HDD yang dapat digunakan untuk pemasangan jaringan kabel optik / listrik, pipa HDPE atau PE dan lainnya. Dengan menggunakan mesin bor HDD ini tidak perlu dilakukan penggalian jalan atau bangunan yang akan dilewati jalur instalasi kabel/pipa, sehingga dapat menghemat waktu dan biaya karena tidak memerlukan banyak tenaga manusia untuk melakukan penggalian sebagaimana pemasangan instalasi jaringan kabel/pipa secara manual.</div>
         </div>
        
     </div>
