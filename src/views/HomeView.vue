@@ -21,7 +21,7 @@
       <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
     </div>
     <div class="home--catalog3 relative w-full">
-      <div class="flex lg:flex-row flex-col my-10 justify-center max-w-[250px] mx-auto">
+      <div class="flex lg:flex-row flex-col my-10 justify-center lg:max-w-5xl max-w-[250px] mx-auto">
         <div class="img--owner mx-auto bg-cover object-contain rounded-xl rounded-t-xl rounded-b-xl overflow-hidden">
           <img class="w-full" :src="require('../assets/owner-min.png')">
         </div>
