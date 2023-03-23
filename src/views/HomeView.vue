@@ -20,12 +20,12 @@
     <div @click="testClick" class="flex justify-center items-center flex-col mt-8">
       <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
     </div>
-    <div class="home--catalog3 relative w-full">
+    <div class="home--catalog3 relative flex mb-14 w-full">
       <div class="flex lg:flex-row flex-col my-10 justify-center lg:max-w-5xl max-w-[250px] mx-auto">
         <div class="img--owner mx-auto bg-cover object-contain rounded-xl rounded-t-xl rounded-b-xl overflow-hidden">
           <img class="w-full" :src="require('../assets/owner-min.png')">
         </div>
-        <div class="home--catalog4 lg:max-w-5xl rounded-b lg:rounded-r flex flex-col leading-normal">
+        <div class="home--catalog4 lg:justify-center lg:max-w-5xl rounded-b lg:rounded-r flex flex-col leading-normal">
           <div class="flex flex-col lg:mb-7 lg:ml-6">
             <div class="home--title text-gray-900 font-bold lg:text-6xl text-2xl text-left mt-6">Sungkono</div>
               <div class="home--title font-bold text-gray-400 text-left lg:text-2xl text-xl mt-6">Owner</div>
@@ -36,7 +36,7 @@
       </div>
     </div>
     
-    <div class="imgPartners flex flex-col justify-center items-center w-full mb-14">
+    <div class="imgPartners flex flex-col justify-center items-center w-full mt-8 mb-14">
       <div class="home--title_isi lg:mb-8 mb-0 xl:text-3xl text-xl text-center">CLIENTS & PARTNERS</div>
       <!-- start swiper -->
       <div class="swiper swiper2 swiper-partners">
@@ -378,7 +378,7 @@ export default {
 }
 
 .swiper2{
-    max-width: 1200px;
+    max-width: 1000px;
   }
 
 .swiper-button-next,.swiper-button-prev{
