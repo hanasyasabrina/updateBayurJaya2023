@@ -3,8 +3,8 @@
     <div class="header__top h-full rounded-t-2xl w-full text-white flex flex-row px-6 items-center">
       <div class="flex justify-center py-4 font-bold">PT. Bayur Jaya</div>
       <div class="flex flex-col xl:flex-row ml-auto py-4 gap-1 xl:gap-10 text-sm xl:text-base">
-        <div class="hide-mobile">info@bayurjaya.co.id</div>
-        <div class="hide-mobile">+62 21 552 6610</div>
+        <div class="hide-mobile"><a href="mailto:info@bayurjaya.co.id?subject=Mail from Our Site">info@bayurjaya.co.id</a></div>
+        <div class="hide-mobile"><a href="tel:0215526610">Call +62 21 552 6610</a></div>
         <div class="hide-mobile">Tangerang</div>
         <div><router-link to="/contact">Contact</router-link></div>
       </div>
