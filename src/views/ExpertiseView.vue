@@ -146,6 +146,10 @@
   }
   </script>
   <style lang="scss" scoped>
+
+@mixin smartphone {
+    @media (max-width: 599px) { @content; }
+  }
   .expertise{
     margin-top: -1px;
     background-color: white;
@@ -167,7 +171,17 @@
   }
   .swiper{
     max-width: 1000px;
+    @include smartphone{
+      max-width: 300px;
+    }
   }
+
+  .swiper-slide{
+    &:hover{
+      transform: scale(1.4);
+    }
+  }
+
   .swiper-button-next,.swiper-button-prev{
     top: -100px;
   }
@@ -183,6 +197,9 @@
       background-repeat: no-repeat;
       background-position: center;
       
+      @include smartphone{
+        padding: 75%;
+      }
     }
   }
   .swiper-button-prev{
@@ -197,6 +214,10 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+
+      @include smartphone{
+        padding: 75%;
+      }
     }
   }
   </style>
