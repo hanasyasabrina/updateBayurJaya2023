@@ -116,7 +116,23 @@
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          //slidesPerView: 3,
+
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+              spaceBetween: 25
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
+          },
+
           navigation: {
             nextEl: ".swiper-button-next-mekanikal",
             prevEl: ".swiper-button-prev-mekanikal"
@@ -130,7 +146,22 @@
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          slidesPerView: 3,
+          //slidesPerView: 3,
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+              spaceBetween: 25
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
+          },
+          
           navigation: {
             nextEl: ".swiper-button-next-telematika",
             prevEl: ".swiper-button-prev-telematika"
