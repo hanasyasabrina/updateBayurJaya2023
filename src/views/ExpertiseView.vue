@@ -2,9 +2,9 @@
     <div class="expertise w-full relative px-4 xl:px-48"> 
         <!-- mulai dari sini -->
         <!-- MEKANIKAL & ELEKTRIKAL -->
-        <div class="expertise--catalog flex flex-col justify-center items-center w-full mb-14">
+        <div class="flex flex-col justify-center items-center w-full mb-14">
           <div class="mb-8 text-3xl text-center">MEKANIKAL & ELEKTRIKAL</div>
-          <div class="text-xl flex items-center text-justify mb-8 max-w-5xl">
+          <div class="text-xl flex items-center text-center mb-8 max-w-5xl">
             <p>Kami menyediakan jasa dalam bidang Mekanikal dan Elektrikal. Pengalaman kami dalam mengelola kabel & jaringan seperti lampu runway pesawat,  SQFL (Sequence Flashing Light), Welder DPPU (Depot Pengisian Pesawat Udara), Apron Flood Light (penangkal petir & obstruction light) dan lainnya.</p>
           </div>
           <div class="mb-8">
@@ -29,8 +29,8 @@
 
         <!-- BIDANG TELEMATIKA -->
         <div class="flex flex-col justify-center items-center w-full mb-14">
-          <div class="mb-8 text-3xl">BIDANG TELEMATIKA</div>
-          <div class="text-xl flex items-center text-justify mb-8 max-w-5xl">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
+          <div class="mb-8 text-3xl text-center">BIDANG TELEMATIKA</div>
+          <div class="text-xl flex items-center text-center mb-8 max-w-5xl">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
           <div class="mb-8">
              <!-- start swiper telematika -->
             <div class="swiper swiper-telematika">
