@@ -62,9 +62,10 @@
         
 
      </div>
-     <div  class="contact--title text-3xl font-semibold not-italic mt-24">Deskripsikan Kebutuhan Anda, Kami Selalu Siap Membantu</div>
-     <div  class="contact--title_isi font-semibold text-base not-italic mt-2 text-center mb-14">Kami menjamin bahwa semua data koresponden adalah bersifat RAHASIA dan tidak akan dipublikasikan.</div>
-     
+     <div class="grid grid-rows-2 gap-3">
+     <div  class="row-span-1 contact--title text-3xl font-semibold not-italic mt-24">Deskripsikan Kebutuhan Anda, Kami Selalu Siap Membantu</div>
+     <div  class="row-span-1 contact--title_isi font-semibold text-base not-italic mt-2 text-center">Kami menjamin bahwa semua data koresponden adalah bersifat RAHASIA dan tidak akan dipublikasikan.</div>
+     </div>
      </div>
 </template>
 
