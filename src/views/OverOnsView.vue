@@ -3,10 +3,12 @@
       <!-- mulai dari sini -->
       <div class="over-ons--catalog3 flex justify-center items-center flex-col">
         <div class="over-ons--title text-center mb-8 text-3xl">Sewa Mesin Boring HDD</div>
-        <div class="over-ons--download">CALL FOR RENTAL</div>
+        <div class="over-ons--download"><a href="tel:081314484644">CALL FOR RENTAL</a></div>
       </div>
       <div class="over-ons--catalog mt-20 flex flex-col items-center justify-center">
-        <div>VIDEO</div>
+        <div class="relative flex w-full h-full">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eNWtz19gfJ4" title="How Horizontal Directional Drilling Works | XCMG Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
       <div class="over-ons__box my-20 flex items-center justify-center">
         <div class="over-ons--catalog4"></div>

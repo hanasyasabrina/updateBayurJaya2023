@@ -5,7 +5,7 @@
           <div class="home--title_isi text-center w-full flex max-w-screen-lg font-normal text-base text-center"><p>Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</p></div>
     </div>
     <!-- start swiper -->
-    <div class="swiper swiper-home w-full lg:max-w-6xl">
+    <div class="swiper swiper-home w-full lg:max-w-5xl">
       <div class="swiper-wrapper max-h-[600px]">
         <!-- Slides -->
         <div class="swiper-slide slide-card" v-for="(index, key) in dataFoto" :key="key">
@@ -17,7 +17,8 @@
     </div>
     <!-- end swiper -->
 
-    <div @click="testClick" class="flex justify-center items-center flex-col my-14">
+    <div class="flex justify-center items-center flex-col my-14">
+      <!-- <a href="../../assets/files/compro-Bayur-2023.pdf" download> -->
       <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
     </div>
     <div class="home--catalog3 relative flex mb-14 w-full">
@@ -68,6 +69,7 @@ export default {
   data(){
     return{
       swiperTest: null,
+      urlFile: 'http://localhost:8080/src/assets/files/compro-Bayur-2023.pdf',
       dataFoto:[
         {
           url:"CCTV.png",
@@ -186,7 +188,7 @@ export default {
             },
             1280: {
               slidesPerView: 3,
-              spaceBetween: 0,
+              spaceBetween: -30,
             }
           },
         autoplay:{
@@ -198,6 +200,29 @@ export default {
         },
 
       });
+    },
+    downloadFileLocal(response){
+      console.log(response, response.data)
+      const url = window.URL.createObjectURL(new Blob([response.data]))
+      const link = document.createElement('a')
+      link.href = url
+      link.setAttribute('download', 'Compro Bayur Jaya 2023.pdf') //or any other extension
+      document.body.appendChild(link)
+      link.click()
+    },
+    downloadWithVueResource() {
+      // eslint-disable-next-line
+      axios({
+        method: 'get',
+        url: this.urlFile,
+        responseType: 'blob'
+      })
+      .then(response => {
+        console.log(response)
+        this.downloadFileLocal(response)  
+      })
+      .catch(() => console.log('error occured'))
+      
     },
     testClick(){
       alert('INI HASIL @ KLIK METHOD')
