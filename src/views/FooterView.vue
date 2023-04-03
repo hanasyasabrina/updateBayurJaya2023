@@ -17,11 +17,6 @@ export default {
     return{
 
     }
-  },
-  methods:{
-
-  },
-  mounted(){
   }
 }
 </script>
@@ -29,7 +24,6 @@ export default {
 .footer{
     background-color: #0A2753;
     font-family: 'Cabin, Inter';
-    // position: absolute;
     &--box{
         color: white;
         background-color: #0A2753;

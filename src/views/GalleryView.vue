@@ -214,11 +214,9 @@
       initSwiperRunway(){
       // eslint-disable-next-line
         this.swiperRunway = new Swiper('.swiper-runway', {
-          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          // slidesPerView: 3,
           breakpoints: {
             480: {
               slidesPerView: 1.3,
@@ -233,10 +231,6 @@
               spaceBetween: 30,
             }
           },
-          // If we need pagination
-          // pagination: {
-          //   el: '.swiper-pagination',
-          // },
           navigation: {
             nextEl: ".swiper-button-next-runway",
             prevEl: ".swiper-button-prev-runway"
@@ -274,11 +268,9 @@
       initSwiperSipil(){
       // eslint-disable-next-line
         this.swiperSipil = new Swiper('.swiper-sipil', {
-          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          // slidesPerView: 3,
           breakpoints: {
             480: {
               slidesPerView: 1.3,
@@ -302,11 +294,9 @@
       initSwiperHdd(){
       // eslint-disable-next-line
         this.swiperHDD = new Swiper('.swiper-hdd', {
-          // spaceBetween: 30,
           autoHeight: false,
           centeredSlides: true,
           loop: true,
-          // slidesPerView: 3,
           breakpoints: {
             480: {
               slidesPerView: 1.3,
@@ -423,12 +413,10 @@
     top: -100px;
   }
   .swiper-button-next{
-    // position: relative;
     right: -15px;
     @include smartphone{
       right: 3px;
     }
-    // top: 20%;
     &::after{
       content: "";
       background-image: url('../assets/ornament/btn-next.png');
@@ -443,13 +431,10 @@
     }
   }
   .swiper-button-prev{
-    // position: relative;
     left: -15px;
     @include smartphone{
       left: 3px;
     }
-    // left: 150px;
-    // top: 20%;
     &::after{
       content: "";
       background-image: url('../assets/ornament/btn-prev.png');

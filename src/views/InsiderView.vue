@@ -59,12 +59,6 @@
           }
         ]
       }
-    },
-    methods:{
-  
-    },
-    mounted(){
-      console.log("ini insider")
     }
   }
   </script>
@@ -150,12 +144,8 @@
   
   
       &--image{
-        // flex: 1 1 0;
         width: 30%;
         height: 100%;
-        // background-position: center;
-        // background-size: contain;
-        // background-repeat: no-repeat;
         &:hover{
           transform: scale(1.2);
         }

@@ -207,7 +207,6 @@ export default {
       });
     },
     downloadFileLocal(response){
-      console.log(response, response.data)
       const url = window.URL.createObjectURL(new Blob([response.data]))
       const link = document.createElement('a')
       link.href = url
@@ -223,7 +222,6 @@ export default {
         responseType: 'blob'
       })
       .then(response => {
-        console.log(response)
         this.downloadFileLocal(response)  
       })
       .catch(() => console.log('error occured'))
@@ -264,9 +262,7 @@ export default {
   },
   mounted(){
     this.initSwiperTest()
-    console.log(this.dataFoto)
     this.initSwiperPartners()
-    console.log(this.dataPartners)
   }
 }
 </script>
@@ -367,7 +363,6 @@ export default {
 
 }
 .swiper{
-  //background-color: #ffffff;
   width: 100%;
   height: 100%;
   
@@ -405,12 +400,10 @@ export default {
     // @include smartphone{ top: -95px;}
   }
   .swiper-button-next{
-    // position: relative;
     right: 15%;
     @include smartphone{
       right: 5px;
     }
-    // top: 20%;
     &::after{
       content: "";
       background-image: url('../assets/ornament/btn-next.png');
@@ -424,12 +417,10 @@ export default {
     }
   }
   .swiper-button-prev{
-    // position: relative;
     left: 15%;
     @include smartphone{
       left: 5px;
     }
-    // top: 20%;
     &::after{
       content: "";
       background-image: url('../assets/ornament/btn-prev.png');
@@ -479,9 +470,6 @@ img{
   width: 100%;
   height: 100%;
   object-fit: contain;
-  // @include smartphone{
-  //   width: 85%;
-  // }
 
   &--owner{
     height: 1035;

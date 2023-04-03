@@ -63,7 +63,6 @@ export default {
   background-color: #0A2753;
 }
 .header{
-  // background-color: #0A2753;
 
   &__top{
     background-color: #0A2753;
@@ -123,18 +122,4 @@ export default {
 	background-color: #0e1c4b;
 }
 
-/* 
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>

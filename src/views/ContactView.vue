@@ -94,10 +94,6 @@ export default {
     methods:{
       
   
-    },
-    mounted(){
-      // this.initEmail()
-      // this.initClock()
     }
   }
 </script>
@@ -116,8 +112,6 @@ export default {
 
   &--title_isi{
      font-family: 'Cabin';
-     //text-align: center;
-     //font-weight: 400;
    }
   &--border{
     width: 100%;
@@ -128,16 +122,8 @@ export default {
   }
 }
 
-// .email{
-//     max-width: 1000px;
-//     @include smartphone{
-//       max-width: 300px;
-//     }
-//   }
 
 img{
-  //width: 100%;
-  //height: 100%;
   object-fit: contain;
 
   &--asset{
@@ -147,7 +133,6 @@ img{
     left: 186px;
     top: 327px;
     float: left;
-    //bottom: 56px;
   }
 
 }

@@ -263,13 +263,10 @@
     }
   }
   .swiper-button-prev{
-    // position: relative;
     left: -15px;
     @include smartphone{
       left: 3px;
     }
-    // left: 150px;
-    // top: 20%;
     &::after{
       content: "";
       background-image: url('../assets/ornament/btn-prev.png');
