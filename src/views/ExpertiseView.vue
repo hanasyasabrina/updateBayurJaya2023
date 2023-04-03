@@ -1,7 +1,8 @@
 <template>
-    <div class="expertise w-full relative px-4 xl:px-48"> 
+    <div class="expertise w-full relative px-4 xl:mx-auto"> 
         <!-- mulai dari sini -->
         <!-- MEKANIKAL & ELEKTRIKAL -->
+        <div class="expertise--ornament1 w-full h-full"></div>
         <div class="flex flex-col justify-center items-center w-full mb-14">
           <div class="mb-8 text-3xl text-center">MEKANIKAL & ELEKTRIKAL</div>
           <div class="text-xl flex items-center text-center mb-8 max-w-5xl">
@@ -26,9 +27,10 @@
           </div>
           
         </div>
+        <div class="expertise--ornament2 w-full h-full"></div>
 
         <!-- BIDANG TELEMATIKA -->
-        <div class="flex flex-col justify-center items-center w-full mb-14">
+        <div class="flex flex-col justify-center items-center w-full mb-14 lg:mt-40 lg:pb-24">
           <div class="mb-8 text-3xl text-center">BIDANG TELEMATIKA</div>
           <div class="text-xl flex items-center text-center mb-8 max-w-5xl">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
           <div class="mb-8">
@@ -46,7 +48,8 @@
             </div>
             <!-- end swiper -->
           </div>
-          </div>
+        </div>
+
     </div>
   </template>
   <script>
@@ -185,20 +188,43 @@
     margin-top: -1px;
     background-color: white;
 
-    &--catalog{
+    &--ornament1{
       position: relative;
-      // &:before{
-      //   content: "";
-      //   position: absolute;
-      //   top: -40px;
-      //   left: 925px;
-      //   background-image: url('../assets/ornament/insider4.png');
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      //   width: 54px;
-      //   height: 54px;
-      // }
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        right: 50px;
+        background: #0a2753;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        @include smartphone{
+          display: none;
+        }
+      }
     }
+    &--ornament2{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -20px;
+        background-image: url('../assets/ornament/exp1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 64px;
+        @include smartphone{
+          width: 150px;
+          height: 32px;
+          left: -16px;
+          top: -45px;
+        }
+      }
+    }
+
   }
   .swiper{
     max-width: 1000px;

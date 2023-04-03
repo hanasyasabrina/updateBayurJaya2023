@@ -1,8 +1,8 @@
 <template>
-    <div class="gallery w-full relative px-4 xl:px-48"> 
+    <div class="gallery w-full relative px-4 lg:px-0 xl:mx-auto"> 
         <!-- mulai dari sini -->
         <!-- CCTV & KABEL JARINGAN -->
-        <div class="flex flex-col justify-center items-center w-full mb-14">
+        <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
           <div class="mb-8 text-3xl text-center">CCTV & KABEL JARINGAN</div>
           <div class="mb-8">
              <!-- start swiper runway -->
@@ -25,9 +25,10 @@
             <p>Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</p>
           </div>
         </div>
+        <div class="gallery--ornament1 w-full h-full"></div>
 
         <!-- RUNWAY & GARDU -->
-        <div class="flex flex-col justify-center items-center w-full mb-14">
+        <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
           <div class="mb-8 text-3xl text-center">RUNWAY, GARDU & DPPU</div>
           <div class="mb-8">
              <!-- start swiper runway -->
@@ -46,9 +47,10 @@
           </div>
           <div class="text-xl flex items-center text-center max-w-5xl">Pekerjaan Penggantian Peralatan Sequence Flashing Light (SQFL) di Bandara Internasional Minangkabau dari konfigurasi 30 unit baru di ujung runway 33. Pekerjaan lainnya Apron Flood Light yang dilengkapi dengan penangkal petir dan obstruction light, sehingga dapat terlihat dari service road untuk memudahkan maintenance dikemudian hari.</div>
         </div>
+        <div class="gallery--ornament2 w-full h-full"></div>
 
         <!-- SIPIL & TENAGA -->
-        <div class="flex flex-col justify-center items-center w-full mb-14">
+        <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
           <div class="mb-8 text-3xl">SIPIL & TENAGA</div>
           <div class="mb-8">
              <!-- start swiper sipil -->
@@ -69,8 +71,9 @@
             <p>Salah satu kerja Sipil yang dikerjakan Bayur Jaya adalah Pembangunan Rumah Hunian Cluster LaVerde Serpong Park di Kota Tangerang Selatan dan Intstalasi Gardu T.03, T.08 dan T.10 Terminal 3 Bandara Internasional Soekarno-Hatta.</p>
           </div>
         </div>
+        <div class="gallery--ornament3 w-full h-full"></div>
         <!-- BORING HDD -->
-        <div class="flex flex-col justify-center items-center w-full mb-14">
+        <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
           <div class="mb-8 text-3xl">BORING HDD</div>
           <div class="mb-8">
              <!-- start swiper hdd -->
@@ -340,6 +343,70 @@
   .gallery{
     margin-top: -1px;
     background-color: white;
+
+    &--ornament1{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-image: url('../assets/ornament/gallery2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 64px;
+        @include smartphone{
+          width: 150px;
+          height: 32px;
+          right: -16px;
+          top: -45px;
+        }
+      }
+    }
+
+    &--ornament2{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-image: url('../assets/ornament/gallery1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 64px;
+        @include smartphone{
+          width: 100px;
+          height: 32px;
+          left: -16px;
+          top: -45px;
+        }
+      }
+    }
+
+    &--ornament3{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #e33c3a;
+        border-radius: 8px;
+        width: 450px;
+        height: 10px;
+        @include smartphone{
+          top: -25px;
+          width: 200px;
+          height: 4px;
+          right: -16px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+      }
+    }
   }
   .swiper{
     max-width: 1000px;

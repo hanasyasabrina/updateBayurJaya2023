@@ -5,9 +5,10 @@
         <div class="over-ons--title text-center mb-8 text-3xl">Sewa Mesin Boring HDD</div>
         <div class="over-ons--download"><a href="tel:081314484644">CALL FOR RENTAL</a></div>
       </div>
+      <div class="over-ons--ornament1 w-full h-full"></div>
       <div class="over-ons--catalog mt-20 flex flex-col items-center justify-center">
         <div class="relative flex w-full h-full">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eNWtz19gfJ4" title="How Horizontal Directional Drilling Works | XCMG Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="lg:min-h-[542px] lg:min-w-[960px]" width="100%" height="100%" src="https://www.youtube.com/embed/eNWtz19gfJ4" title="How Horizontal Directional Drilling Works | XCMG Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <div class="over-ons__box my-20 flex items-center justify-center">
@@ -21,6 +22,8 @@
           <img :src="require(`../assets/over-ons-hdd.png`)"/>
         </div>
       </div>
+      <div class="over-ons--ornament2 w-full h-full"></div>
+
 
   </div>
 </template>
@@ -80,66 +83,43 @@ export default {
     font-family: 'Montserrat';
   }
 
-  &--catalog{
+  &--ornament1{
     position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: -70px;
-    //   left: -650px;
-    //   background-image: url('../assets/ornament/insider2.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 50px;
-    //   height: 350px;
-    // }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #e43935;
+      width: 50px;
+      height: 350px;
+      @include smartphone{
+        display: none;
+      }
+    }
   }
 
-    &--catalog3{
+  &--ornament2{
     position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: 620px;
-    //   left: 750px;
-    //   background-image: url('../assets/ornament/insider3.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 154px;
-    //   height: 360px;
-    //   }
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 50px;
+      right: 0px;
+      background-image: url('../assets/ornament/insider3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 112px;
+      height: 360px;
+      @include smartphone{
+        right: -16px;
+        bottom: 48px;
+        width: 45px;
+        height: 150px;
+      }
     }
+  }
 
-    &--catalog4{
-    position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: 490px;
-    //   left: -40px;
-    //   background-image: url('../assets/ornament/insider4.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 32px;
-    //   height: 32px;
-    //   }
-    }
-
-    &--catalog5{
-    position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: 500px;
-    //   left: -30px;
-    //   background-image: url('../assets/ornament/insider5.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 61.98px;
-    //   height: 61.98px;
-    //   transform: rotate(10.5deg);
-    //   }
-    }
 
   &--download{
     padding: 20px 64px;

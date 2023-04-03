@@ -5,6 +5,7 @@
           <div class="insider--title text-center mb-8 text-3xl">Get Our Catalog</div>
           <div class="insider--download">DOWNLOAD COMPANY PROFILE</div>
         </div>
+        <div class="insider--ornament1 w-full h-full"></div>
         <div class="insider--catalog mt-20 flex flex-col items-center justify-center">
           <div class="insider--title mb-8 text-3xl">Our Story</div>
           <div class="insider__story--text text-base gap-4 text-justify">
@@ -18,6 +19,8 @@
             <img :src="require(`../assets/gallery/runwayGardu/${index.url}`)"/>
           </div>
         </div> 
+        <div class="insider--ornament2 w-full h-full"></div>
+
   
     </div>
   </template>
@@ -77,19 +80,39 @@
       font-family: 'Montserrat';
     }
   
-    &--catalog{
+    &--ornament1{
       position: relative;
-      // &:before{
-      //   content: "";
-      //   position: absolute;
-      //   top: -120px;
-      //   left: -180px;
-      //   background-image: url('../assets/ornament/insider.png');
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      //   width: 150px;
-      //   height: 120px;
-      // }
+      &:before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        background-image: url('../assets/ornament/insider.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 120px;
+        @include smartphone{
+          left: -25px;
+          width: 90px;
+        }
+      }
+    }
+    &--ornament2{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: 65px;
+        right: 25px;
+        background: #0a2753;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        @include smartphone{
+          display: none;
+        }
+      }
     }
   
     &--download{

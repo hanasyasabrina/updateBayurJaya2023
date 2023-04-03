@@ -4,6 +4,8 @@
           <div class="home--title my-8 lg:mb-8 text-5xl text-center max-w-5xl not-italic font-bold">Build On Safety Is Our Foundation</div>
           <div class="home--title_isi text-center w-full flex max-w-screen-lg font-normal text-base text-center"><p>Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</p></div>
     </div>
+    <div class="home--ornament1 w-full h-full"></div>
+
     <!-- start swiper -->
     <div class="swiper swiper-home w-full lg:max-w-5xl">
       <div class="swiper-wrapper max-h-[600px]">
@@ -16,7 +18,7 @@
       <div class="swiper-pagination"></div>
     </div>
     <!-- end swiper -->
-
+    <div class="home--ornament2 w-full h-full"></div>
     <div class="flex justify-center items-center flex-col my-14">
       <!-- <a href="../../assets/files/compro-Bayur-2023.pdf" download> -->
       <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
@@ -36,6 +38,7 @@
         </div>
       </div>
     </div>
+    <div class="home--ornament3 w-full h-full"></div>
     
     <div class="imgPartners flex flex-col justify-center items-center w-full mt-8 mb-14">
       <div class="home--title_isi lg:mb-8 mb-0 xl:text-3xl text-xl text-center">CLIENTS & PARTNERS</div>
@@ -59,12 +62,14 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
+// import { disconnect } from 'process';
+
 // import { container } from 'webpack';
 
 export default {
   name: 'HomeView',
   components: {
-   // container
+    // disconnect
 },
   data(){
     return{
@@ -308,68 +313,57 @@ export default {
       }
     }
 
-    &--catalog{
+  &--ornament1{
     position: relative;
-      // &:before{
-      //   content: "";
-      //   position: absolute;
-      //   top: 60px;
-      //   left: 1180px;
-      //   background-image: url('../assets/ornament/insider7.png');
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      //   width: 152.02px;
-      //   height: 158.76px;
-      // }
+    &:before{
+      content: "";
+      position: absolute;
+      top: -90px;
+      right: 90px;
+      background-image: url('../assets/ornament/home2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      @include smartphone{
+        display: none;
+      }
     }
-
-    &--catalog2{
+  }
+  &--ornament2{
     position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: 570px;
-    //   left: -720px;
-    //   background-image: url('../assets/ornament/insider3.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 154px;
-    //   height: 360px;
-    //   transform: rotate(180deg);
-    //   }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url('../assets/ornament/home3.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 208px;
+      height: 400px;
+      @include smartphone{
+        display: none;
+      }
     }
-
-    &--catalog3{
+  }
+  &--ornament3{
     position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: -40px;
-    //   left: 620px;
-    //   background-image: url('../assets/ornament/insider2.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 8px;
-    //   height: 396px;
-    //   transform: rotate(90deg);
-    //   }
+    &:before{
+      content: "";
+      position: absolute;
+      top: -150px;
+      right: 90px;
+      background-image: url('../assets/ornament/home1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      @include smartphone{
+        display: none;
+      }
     }
-
-    &--catalog4{
-    position: relative;
-    // &:before{
-    //   content: "";
-    //   position: absolute;
-    //   top: 20px;
-    //   left: 660px;
-    //   background-image: url('../assets/ornament/insider.png');
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   width: 206px;
-    //   height: 172px;
-    //   transform: rotate(180deg);
-    //   }
-    }
+  }
 
 }
 .swiper{

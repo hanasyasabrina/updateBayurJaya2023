@@ -3,9 +3,9 @@
         <!-- mulai dari sini -->
 
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 gap md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap md:grid-cols-2 lg:grid-cols-3 pt-6">
           <div class="flex flex-col lg:justify-start justify-center lg:items-start items-center">
-            <div class="contact--title text-xl font-semibold w-48 h-7 left-44 top-60 mb-10 text-center underline underline-offset-8 decoration-4 decoration-blue-900">KANTOR PUSAT</div>
+            <div class="contact--title text-xl font-semibold lg:ml-9 h-7 mb-6 text-center underline underline-offset-8 decoration-4 decoration-blue-900">KANTOR PUSAT</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-6">
               <img class="img--asset float float-left mb-4 mr-4" :src="require('../assets/ornament/pin.png')">Jl. Raya Bayur No. 72 Periuk Jaya Tangerang Banten 15131</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
@@ -15,8 +15,8 @@
               <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-6 mr-4 mt-3" :src="require('../assets/ornament/clock.png')">Senin – Jum’at. 8.00 – 17.00 Sabtu. 8.00 – 12.00</div>
           </div>
-          <div class="flex flex-col lg:justify-start justify-center lg:items-start items-center lg:mt-0 mt-6">
-            <div class="contact--title col-span-2 text-xl font-semibold w-48 h-7 left-44 top-60 mb-6 underline underline-offset-8 decoration-4 decoration-blue-900">WORKSHOP</div>
+          <div class="flex flex-col lg:justify-start justify-center lg:items-start items-center lg:mt-0 mt-16">
+            <div class="contact--title col-span-2 text-xl font-semibold lg:ml-9 h-7 mb-6 underline underline-offset-8 decoration-4 decoration-blue-900">WORKSHOP</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-8 mr-4" :src="require('../assets/ornament/pin.png')">Kp. Sekarwangi No. 39-40 Neglasari Tangerang Banten 15129</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
@@ -26,8 +26,8 @@
               <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-6 mr-4 mt-3" :src="require('../assets/ornament/clock.png')">Senin – Jum’at. 8.00 – 17.00 Sabtu. 8.00 – 12.00</div>
           </div>
-          <div class="flex flex-col lg:justify-start justify-center lg:items-start items-center lg:mt-0 mt-6">
-            <div class="contact--title col-span-2 text-xl font-semibold w-48 h-7 left-44 top-60 mb-6 underline underline-offset-8 decoration-4 decoration-blue-900">DIVISI TELKOM</div>
+          <div class="flex flex-col lg:justify-start justify-center lg:items-start items-center lg:mt-0 mt-16">
+            <div class="contact--title col-span-2 text-xl font-semibold lg:ml-9 h-7 mb-6 underline underline-offset-8 decoration-4 decoration-blue-900">DIVISI TELKOM</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-6">
               <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/pin.png')">Jl. Mandanau Blok A5 No 29 Tangerang Banten 15133</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
