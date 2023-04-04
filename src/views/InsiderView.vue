@@ -3,7 +3,9 @@
         <!-- mulai dari sini -->
         <div class="flex justify-center items-center flex-col">
           <div class="insider--title text-center mb-8 text-3xl">Get Our Catalog</div>
-          <div class="insider--download">DOWNLOAD COMPANY PROFILE</div>
+          <a href="/files/compro-Bayur-2023.pdf" download>
+            <div class="insider--download">DOWNLOAD COMPANY PROFILE</div>
+          </a>
         </div>
         <div class="insider--ornament1 w-full h-full"></div>
         <div class="insider--catalog mt-20 flex flex-col items-center justify-center">

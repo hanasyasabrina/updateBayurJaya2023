@@ -20,8 +20,9 @@
     <!-- end swiper -->
     <div class="home--ornament2 w-full h-full"></div>
     <div class="flex justify-center items-center flex-col my-14">
-      <!-- <a href="../../assets/files/compro-Bayur-2023.pdf" download> -->
-      <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
+      <a href="/files/compro-Bayur-2023.pdf" download>
+        <div class="home--download">DOWNLOAD COMPANY PROFILE</div>
+      </a>
     </div>
     <div class="home--catalog3 relative flex mb-14 w-full">
       <div class="flex lg:flex-row flex-col my-10 justify-center lg:max-w-5xl max-w-[250px] mx-auto">
