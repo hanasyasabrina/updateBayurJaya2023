@@ -2,7 +2,7 @@
   <div class="home relative w-full px-4 lg:px-0">
     <div class="home--catalog flex flex-col justify-center items-center w-full mb-14">
           <div class="home--title my-8 lg:mb-8 text-5xl text-center max-w-5xl not-italic font-bold">Build On Safety Is Our Foundation</div>
-          <div class="home--title_isi text-center w-full flex max-w-screen-lg font-normal text-base text-center"><p>Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</p></div>
+          <div class="home__desc home__desc--title text-center w-full flex max-w-screen-lg font-normal text-base text-center"><p>Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</p></div>
     </div>
     <div class="home--ornament1 w-full h-full"></div>
 
@@ -33,16 +33,16 @@
           <div class="flex flex-col lg:mb-7 lg:ml-14">
             <div class="home--title text-gray-900 font-bold lg:text-6xl text-2xl text-left mt-6">Sungkono</div>
               <div class="home--title font-bold text-gray-400 text-left lg:text-2xl text-xl mt-6">Owner</div>
-              <div class="border-solid border border-blue-900 lg:max-w-xs max-w-[100px] mb-6"></div>
-              <div class="text-gray-700 text-base text-left max-w-xl">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</div>
+              <div class="border-solid border border-blue-900 lg:max-w-xs max-w-[100px] mb-4"></div>
+              <div class="home__desc--owner text-gray-700 text-base text-left max-w-xl">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</div>
           </div>
         </div>
       </div>
     </div>
     <div class="home--ornament3 w-full h-full"></div>
     
-    <div class="imgPartners flex flex-col justify-center items-center w-full mt-8 mb-14">
-      <div class="home--title_isi lg:mb-8 mb-0 xl:text-3xl text-xl text-center">CLIENTS & PARTNERS</div>
+    <div class="imgPartners flex flex-col justify-center items-center w-full mt-8 pb-14">
+      <div class="home__desc home__desc--title lg:mb-8 mb-0 xl:text-3xl text-xl text-center">CLIENTS & PARTNERS</div>
       <!-- start swiper -->
       <div class="swiper swiper2 swiper-partners">
         <div class="swiper-wrapper">
@@ -283,10 +283,19 @@ export default {
       font-family: 'Montserrat';
     }
 
-  &--title_isi{
-     font-family: 'Cabin';
-     letter-spacing: 4px;
-   }
+  // &--title_isi{
+  //    font-family: 'Cabin';
+  //    letter-spacing: 2px;
+  //  }
+  &__desc{
+    font-family: 'Cabin';
+    &--title{
+      letter-spacing: 2px;
+    }
+    &--owner{
+      letter-spacing: 1px;
+    }
+  }
 
   &--download{
       padding: 20px 64px;
@@ -316,7 +325,7 @@ export default {
       content: "";
       position: absolute;
       top: -90px;
-      right: 90px;
+      right: 30px;
       background-image: url('../assets/ornament/home2.png');
       background-repeat: no-repeat;
       background-size: contain;
@@ -350,7 +359,7 @@ export default {
       content: "";
       position: absolute;
       top: -150px;
-      right: 90px;
+      right: 65px;
       background-image: url('../assets/ornament/home1.png');
       background-repeat: no-repeat;
       background-size: contain;
@@ -397,11 +406,12 @@ export default {
   }
 
 .swiper-button-next,.swiper-button-prev{
-    top: -95px;
+    top: -60px;
+    box-shadow: 0px 2px 30px rgba(0,0,0,.4);
     // @include smartphone{ top: -95px;}
   }
   .swiper-button-next{
-    right: 15%;
+    right: 12%;
     @include smartphone{
       right: 5px;
     }
@@ -418,7 +428,7 @@ export default {
     }
   }
   .swiper-button-prev{
-    left: 15%;
+    left: 12%;
     @include smartphone{
       left: 5px;
     }

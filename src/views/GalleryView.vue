@@ -3,7 +3,7 @@
         <!-- mulai dari sini -->
         <!-- CCTV & KABEL JARINGAN -->
         <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
-          <div class="mb-8 text-3xl text-center">CCTV & KABEL JARINGAN</div>
+          <div class="mb-8 text-3xl text-center font-bold">CCTV & KABEL JARINGAN</div>
           <div class="mb-8">
              <!-- start swiper runway -->
             <div class="swiper swiper-cctv">
@@ -29,7 +29,7 @@
 
         <!-- RUNWAY & GARDU -->
         <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
-          <div class="mb-8 text-3xl text-center">RUNWAY, GARDU & DPPU</div>
+          <div class="mb-8 text-3xl text-center font-bold">RUNWAY, GARDU & DPPU</div>
           <div class="mb-8">
              <!-- start swiper runway -->
             <div class="swiper swiper-runway">
@@ -51,7 +51,7 @@
 
         <!-- SIPIL & TENAGA -->
         <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
-          <div class="mb-8 text-3xl">SIPIL & TENAGA</div>
+          <div class="mb-8 text-3xl font-bold">SIPIL & TENAGA</div>
           <div class="mb-8">
              <!-- start swiper sipil -->
             <div class="swiper swiper-sipil">
@@ -73,8 +73,8 @@
         </div>
         <div class="gallery--ornament3 w-full h-full"></div>
         <!-- BORING HDD -->
-        <div class="flex flex-col justify-center items-center w-full mb-14 py-12">
-          <div class="mb-8 text-3xl">BORING HDD</div>
+        <div class="flex flex-col justify-center items-center w-full mb-14 lg:mb-0 py-12">
+          <div class="mb-8 text-3xl font-bold">BORING HDD</div>
           <div class="mb-8">
              <!-- start swiper hdd -->
             <div class="swiper swiper-hdd">
@@ -382,11 +382,11 @@
         content: "";
         position: absolute;
         top: 0;
-        right: 0;
+        right: 85px;
         background-color: #e33c3a;
         border-radius: 8px;
         width: 450px;
-        height: 10px;
+        height: 8px;
         @include smartphone{
           top: -25px;
           width: 200px;
@@ -404,13 +404,14 @@
       max-width: 300px;
     }
   }
-  .swiper-slide{
+  .swiper-slide-active{
     &:hover{
-      transform: scale(1.4);
+      transform: scale(1.2);
     }
   }
   .swiper-button-next,.swiper-button-prev{
     top: -100px;
+    box-shadow: 0px 2px 30px rgba(0,0,0,.4);
   }
   .swiper-button-next{
     right: -15px;
