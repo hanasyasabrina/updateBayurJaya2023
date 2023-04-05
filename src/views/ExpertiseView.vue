@@ -13,7 +13,7 @@
             <div class="swiper swiper-mekanikal">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoMekanikal" :key="key">
-                    <img :src="require(`../assets/gallery/cctvKabel/${index.url}`)"/>
+                    <img :src="require(`../assets/mekanikElektrikal/${index.url}`)"/>
                 </div>
               </div>
              
@@ -38,7 +38,7 @@
             <div class="swiper swiper-telematika">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoTelematika" :key="key">
-                    <img :src="require(`../assets/gallery/cctvKabel/${index.url}`)"/>
+                    <img :src="require(`../assets/bidangTelematika/${index.url}`)"/>
                 </div>
               </div>
             </div>
@@ -65,47 +65,344 @@
 
         dataFotoMekanikal:[
         {
-            url:"cct1.jpeg",
-            category: "cctv",
+            url:"apron_ponti.jpg",
+            category: "apron",
           },
           {
-            url:"cct3.jpeg",
-            category: "cctv",
-          },{
-            url:"cct4.jpeg",
-            category: "cctv",
-          },{
-            url:"cct5.jpeg",
-            category: "cctv",
-          },{
-            url:"cctv-5.jpeg",
-            category: "cctv",
-          },{
-            url:"cctv-7.jpeg",
-            category: "cctv",
-          }
+            url:"apron_ponti2.jpg",
+            category: "apron",
+          },
+          {
+            url:"apron_ponti3.jpg",
+            category: "apron",
+          },
+          {
+            url:"apron_ponti4.jpg",
+            category: "apron",
+          },
+          {
+            url:"apron_ponti5.jpg",
+            category: "apron",
+          },
+          {
+            url:"apron_ponti6.jpg",
+            category: "apron",
+          },
+          {
+            url:"bhs1.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs2.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs3.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs4.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs5.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs6.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs7.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs8.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs9.jpg",
+            category: "bhs",
+          },
+          {
+            url:"Kajar.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar1.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar2.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar3.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar4.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar5.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar6.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar7.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar8.jpg",
+            category: "kajar",
+          },
+          {
+            url:"pjuk1.jpg",
+            category: "pjuk",
+          },
+          {
+            url:"pjuk2.jpg",
+            category: "pjuk",
+          },
+          {
+            url:"pjuk3.jpg",
+            category: "pjuk",
+          },
+          {
+            url:"pjuk4.jpg",
+            category: "pjuk",
+          },
+          {
+            url:"pjuk5.jpg",
+            category: "pjuk",
+          },
+          {
+            url:"pjuk6.jpg",
+            category: "pjuk",
+          },
+          {
+            url:"ptm.jpg",
+            category: "ptm",
+          },
+          {
+            url:"ptm2.jpg",
+            category: "ptm",
+          },
+          {
+            url:"ptm3.jpg",
+            category: "ptm",
+          },
+          {
+            url:"ptm4.jpg",
+            category: "ptm",
+          },
+          {
+            url:"ptm5.jpg",
+            category: "ptm",
+          },
+          {
+            url:"ptm6.jpg",
+            category: "ptm",
+          },
+          {
+            url:"rtil1.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil2.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil3.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil4.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil5.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil6.jpg",
+            category: "rtil",
+          },
+          {
+            url:"sqfl_thaha1.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha2.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha3.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha4.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha5.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha6.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl2.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl3.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl4.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl5.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl6.jpg",
+            category: "sqfl",
+          },
         ],
         dataFotoTelematika:[
           {
-            url:"cct1.jpeg",
+            url:"acu1.jpg",
+            category: "acu",
+          },
+          {
+            url:"acu2.jpg",
+            category: "acu",
+          },
+          {
+            url:"acu3.jpg",
+            category: "acu",
+          },
+          {
+            url:"acu4.jpg",
+            category: "acu",
+          },
+          {
+            url:"acu5.jpg",
+            category: "acu",
+          },
+          {
+            url:"acu6.jpg",
+            category: "acu",
+          },
+          {
+            url: "cct2.jpg",
             category: "cctv",
           },
           {
-            url:"cct3.jpeg",
+            url: "cct3.jpg",
             category: "cctv",
-          },{
-            url:"cct4.jpeg",
+          },
+          {
+            url: "cct4.jpg",
             category: "cctv",
-          },{
-            url:"cct5.jpeg",
+          },
+          {
+            url: "cct5.jpg",
             category: "cctv",
-          },{
-            url:"cctv-5.jpeg",
+          },
+          {
+            url: "cct6.jpg",
             category: "cctv",
-          },{
-            url:"cctv-7.jpeg",
+          },
+          {
+            url: "cct7.jpg",
             category: "cctv",
-          }],
+          },
+          {
+            url: "cctv-1.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-3.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-4.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-5.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-6.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-7.jpg",
+            category: "cctv",
+          },
+          {
+            url: "hytera.jpg",
+            category: "hytera",
+          },
+          {
+            url: "hytera2.jpg",
+            category: "hytera",
+          },
+          {
+            url: "hytera3.jpg",
+            category: "hytera",
+          },
+          {
+            url: "hytera5.jpg",
+            category: "hytera",
+          },
+          {
+            url: "hytera7.jpg",
+            category: "hytera",
+          },
+          {
+            url: "hytera8.jpg",
+            category: "hytera",
+          },
+          {
+            url: "Radar1.jpg",
+            category: "radar",
+          },
+          {
+            url: "Radar2.jpg",
+            category: "radar",
+          },
+          {
+            url: "Radar3.jpg",
+            category: "radar",
+          },
+          {
+            url: "Radar4.jpg",
+            category: "radar",
+          },
+          {
+            url: "Radar5.jpg",
+            category: "radar",
+          },
+          {
+            url: "Radar6.jpg",
+            category: "radar",
+          }
+        ],
          
         
         }

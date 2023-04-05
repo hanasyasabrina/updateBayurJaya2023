@@ -9,7 +9,7 @@
             <div class="swiper swiper-cctv">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoCCTV" :key="key">
-                    <img :src="require(`../assets/gallery/cctvKabel/${index.url}`)"/>
+                    <img :src="require(`../assets/bidangTelematika/${index.url}`)"/>
                 </div>
               </div>
              
@@ -35,7 +35,7 @@
             <div class="swiper swiper-runway">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoRunway" :key="key">
-                    <img :src="require(`../assets/gallery/runwayGardu/${index.url}`)"/>
+                    <img :src="require(`../assets/mekanikElektrikal/${index.url}`)"/>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="swiper swiper-sipil">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoSipil" :key="key">
-                    <img :src="require(`../assets/gallery/sipilTenaga/${index.url}`)"/>
+                    <img :src="require(`../assets/sipilTenaga/${index.url}`)"/>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
             <div class="swiper swiper-hdd">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoHdd" :key="key">
-                    <img :src="require(`../assets/gallery/boringHDD/${index.url}`)"/>
+                    <img :src="require(`../assets/sipilTenaga/${index.url}`)"/>
                 </div>
               </div>
             </div>
@@ -109,101 +109,389 @@
         swiperHDD: null,
 
         dataFotoRunway:[
-          {
-            url:"Radar2.jpeg",
-            category: "runway",
+        {
+            url:"apron_ponti.jpg",
+            category: "apron",
           },
           {
-            url:"Radar4.jpeg",
-            category: "runway",
+            url:"apron_ponti2.jpg",
+            category: "apron",
           },
           {
-            url:"Radar6.jpeg",
-            category: "runway",
+            url:"apron_ponti3.jpg",
+            category: "apron",
           },
           {
-            url:"rtil3.jpeg",
-            category: "runway",
+            url:"apron_ponti4.jpg",
+            category: "apron",
           },
           {
-            url:"rtil6.jpeg",
-            category: "runway",
+            url:"apron_ponti5.jpg",
+            category: "apron",
           },
           {
-            url:"sqfl2.jpeg",
-            category: "runway",
+            url:"apron_ponti6.jpg",
+            category: "apron",
           },
           {
-            url:"Thaha.jpeg",
-            category: "runway",
+            url:"bhs1.jpg",
+            category: "bhs",
           },
           {
-            url:"Thaha3.jpeg",
-            category: "runway",
+            url:"bhs2.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs3.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs4.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs5.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs6.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs7.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs8.jpg",
+            category: "bhs",
+          },
+          {
+            url:"bhs9.jpg",
+            category: "bhs",
+          },
+          {
+            url:"rtil1.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil2.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil3.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil4.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil5.jpg",
+            category: "rtil",
+          },
+          {
+            url:"rtil6.jpg",
+            category: "rtil",
+          },
+          {
+            url:"sqfl_thaha1.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha2.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha3.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha4.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha5.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl_thaha6.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl2.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl3.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl4.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl5.jpg",
+            category: "sqfl",
+          },
+          {
+            url:"sqfl6.jpg",
+            category: "sqfl",
           }
         ],
         dataFotoCCTV:[
-          {
-            url:"cct1.jpeg",
+        {
+            url: "cct2.jpg",
             category: "cctv",
           },
           {
-            url:"cct3.jpeg",
+            url: "cct3.jpg",
             category: "cctv",
-          },{
-            url:"cct4.jpeg",
+          },
+          {
+            url: "cct4.jpg",
             category: "cctv",
-          },{
-            url:"cct5.jpeg",
+          },
+          {
+            url: "cct5.jpg",
             category: "cctv",
-          },{
-            url:"cctv-5.jpeg",
+          },
+          {
+            url: "cct6.jpg",
             category: "cctv",
-          },{
-            url:"cctv-7.jpeg",
+          },
+          {
+            url: "cct7.jpg",
             category: "cctv",
-          }],
+          },
+          {
+            url: "cctv-1.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-3.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-4.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-5.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-6.jpg",
+            category: "cctv",
+          },
+          {
+            url: "cctv-7.jpg",
+            category: "cctv",
+          },
+          {
+            url:"Kajar.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar1.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar2.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar3.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar4.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar5.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar6.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar7.jpg",
+            category: "kajar",
+          },
+          {
+            url:"Kajar8.jpg",
+            category: "kajar",
+          }
+        ],
           dataFotoSipil:[
           {
-            url:"sipil1.jpeg",
-            category: "bb",
+            url:"bb.jpg",
+            category: "BB",
           },
           {
-            url:"sipil2.jpeg",
-            category: "bb1",
+            url:"BB1.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB2.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB3.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB4.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB5.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB6.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB8.jpg",
+            category: "BB",
+          },
+          {
+            url:"BB9.jpg",
+            category: "BB",
+          },
+          {
+            url:"Hole1.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole2.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole3.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole4.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole5.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole6.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole7.jpg",
+            category: "hdd",
+          },
+          {
+            url:"laverde1.jpg",
+            category: "laverde",
+          },
+          {
+            url:"laverde2.jpg",
+            category: "laverde",
+          },
+          {
+            url:"laverde3.jpg",
+            category: "laverde",
+          },
+          {
+            url:"laverde4.jpg",
+            category: "laverde",
+          },
+          {
+            url:"laverde5.jpg",
+            category: "laverde",
+          },
+          {
+            url:"laverde6.jpg",
+            category: "laverde",
+          },
+          {
+            url:"meg1.jpg",
+            category: "meg",
+          },
+          {
+            url:"meg2.jpg",
+            category: "meg",
+          },
+          {
+            url:"meg3.jpg",
+            category: "meg",
+          },
+          {
+            url:"meg4.jpg",
+            category: "meg",
+          },
+          {
+            url:"meg5.jpg",
+            category: "meg",
+          },
+          {
+            url:"meg6.jpg",
+            category: "meg",
+          },
+          {
+            url:"Tank-1.jpg",
+            category: "Tank",
           },{
-            url:"sipil3.jpeg",
-            category: "cw5",
+            url:"Tank-2.jpg",
+            category: "Tank",
           },{
-            url:"sipil4.jpeg",
-            category: "gardu",
-          },{
-            url:"sipil5.jpeg",
-            category: "sipil5",
-          },{
-            url:"Tank-1.jpeg",
-            category: "Tank1",
-          },{
-            url:"Tank-4.jpeg",
-            category: "Tank4",
-          },{
-            url:"Tank-7.jpeg",
-            category: "Tank7",
-          }],
+            url:"Tank-3.jpg",
+            category: "Tank",
+          },
+          {
+            url:"Tank-4.jpg",
+            category: "Tank",
+          },
+          {
+            url:"Tank-5.jpg",
+            category: "Tank",
+          },
+          {
+            url:"Tank-7.jpg",
+            category: "Tank",
+          }
+        ],
 
           dataFotoHdd:[
           {
-            url:"Hole2.jpeg",
+            url:"Hole1.jpg",
             category: "hdd",
           },
           {
-            url:"Hole3.jpeg",
+            url:"Hole2.jpg",
             category: "hdd",
-          },{
-            url:"Hole4.jpeg",
+          },
+          {
+            url:"Hole3.jpg",
             category: "hdd",
-          },{
-            url:"Hole7.jpeg",
+          },
+          {
+            url:"Hole4.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole5.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole6.jpg",
+            category: "hdd",
+          },
+          {
+            url:"Hole7.jpg",
             category: "hdd",
           }],
 
