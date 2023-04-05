@@ -4,7 +4,7 @@
         <!-- MEKANIKAL & ELEKTRIKAL -->
         <div class="expertise--ornament1 w-full h-full"></div>
         <div class="flex flex-col justify-center items-center w-full mb-14">
-          <div class="mb-8 text-3xl text-center">MEKANIKAL & ELEKTRIKAL</div>
+          <div class="mb-8 text-3xl text-center font-bold">MEKANIKAL & ELEKTRIKAL</div>
           <div class="text-xl flex items-center text-center mb-8 max-w-5xl">
             <p>Kami menyediakan jasa dalam bidang Mekanikal dan Elektrikal. Pengalaman kami dalam mengelola kabel & jaringan seperti lampu runway pesawat,  SQFL (Sequence Flashing Light), Welder DPPU (Depot Pengisian Pesawat Udara), Apron Flood Light (penangkal petir & obstruction light) dan lainnya.</p>
           </div>
@@ -30,8 +30,8 @@
         <div class="expertise--ornament2 w-full h-full"></div>
 
         <!-- BIDANG TELEMATIKA -->
-        <div class="flex flex-col justify-center items-center w-full mb-14 lg:mt-40 lg:pb-24">
-          <div class="mb-8 text-3xl text-center">BIDANG TELEMATIKA</div>
+        <div class="flex flex-col justify-center items-center w-full mb-14 lg:mb-0 lg:mt-40 lg:pb-24">
+          <div class="mb-8 text-3xl text-center font-bold">BIDANG TELEMATIKA</div>
           <div class="text-xl flex items-center text-center mb-8 max-w-5xl">Kami menyediakan jasa dalam bidang Telematika. Pengalaman kami dalam instalasi dan pemeliharaan CCTV & Penguat Signal Indoor Radio IGCS. PT. Bayur Jaya untuk melaksanakan instalasi jaringan kabel listrik, kabel optik, panel kontrol dan memasang serta melakukan pengaturan sebanyak 77+ titik kamera.</div>
           <div class="mb-8">
              <!-- start swiper telematika -->
@@ -530,14 +530,15 @@
     }
   }
 
-  .swiper-slide{
+  .swiper-slide-active{
     &:hover{
-      transform: scale(1.4);
+      transform: scale(1.2);
     }
   }
 
   .swiper-button-next,.swiper-button-prev{
     top: -100px;
+    box-shadow: 0px 2px 30px rgba(0,0,0,.4);
   }
   .swiper-button-next{
     // position: relative;
