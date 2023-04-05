@@ -42,12 +42,12 @@
     <div class="home--ornament3 w-full h-full"></div>
     
     <div class="imgPartners flex flex-col justify-center items-center w-full mt-8 pb-14">
-      <div class="home__desc home__desc--title lg:mb-8 mb-0 xl:text-3xl text-xl text-center">CLIENTS & PARTNERS</div>
+      <div class="home__desc home__desc--title mb-0 xl:text-3xl text-xl text-center">CLIENTS & PARTNERS</div>
       <!-- start swiper -->
       <div class="swiper swiper2 swiper-partners">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper items-center">
           <div class="swiper-slide slide-partners flex items-center justify-center" v-for="(index, key) in dataPartners" :key="key">
-            <img :src="require(`../assets/partners/${index.url}`)"/>
+            <img class="img--partner" :src="require(`../assets/partners/${index.url}`)"/>
           </div>
         </div>         
       </div>
@@ -443,10 +443,11 @@ export default {
 
 .swiper2{
     max-width: 1000px;
+    max-height: 250px;
   }
 
 .swiper-button-next,.swiper-button-prev{
-    top: -60px;
+    top: -100px;
     box-shadow: 0px 2px 30px rgba(0,0,0,.4);
     // @include smartphone{ top: -95px;}
   }
@@ -522,11 +523,16 @@ img{
   height: 100%;
   object-fit: contain;
 
+  
+
   &--owner{
     height: 1035;
     width: 722;
   }
 }
+.img--partner{
+    max-height: 250px;
+  }
 
 .imgPartners{
   margin-top: -1px;
