@@ -34,7 +34,7 @@
             <div class="home--title text-gray-900 font-bold lg:text-6xl text-2xl text-left mt-6">Sungkono</div>
               <div class="home--title font-bold text-gray-400 text-left lg:text-2xl text-xl mt-6">Owner</div>
               <div class="border-solid border border-blue-900 lg:max-w-xs max-w-[100px] mb-4"></div>
-              <div class="home__desc--owner text-gray-700 text-base text-left max-w-xl">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</div>
+              <div class="home__desc--owner text-base text-left max-w-xl">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</div>
           </div>
         </div>
       </div>
