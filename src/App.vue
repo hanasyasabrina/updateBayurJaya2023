@@ -13,11 +13,11 @@
       <nav class="flex justify-center items-center flex-row py-6">
         <div class="header--logo"></div>
         <div class="flex h-20 xl:h-12 xl:ml-auto gap-8 menu-scroll-mobile text-base xl:text-xl items-center">
-          <router-link to="/">Home</router-link>
-          <router-link to="/expertise">Expertise</router-link>
-          <router-link to="/gallery">Gallery</router-link>
-          <router-link to="/about">Insider</router-link>
-          <router-link to="/overons">Over ons</router-link>
+          <router-link class="p-1" to="/">Home</router-link>
+          <router-link class="p-1" to="/expertise">Expertise</router-link>
+          <router-link class="p-1" to="/gallery">Gallery</router-link>
+          <router-link class="p-1" to="/about">Insider</router-link>
+          <router-link class="p-1" to="/overons">Over ons</router-link>
         </div>
         
       </nav>
@@ -84,7 +84,6 @@ export default {
 }
 .router-link-exact-active{
   border-bottom: 4px solid #e33c38;
-  padding: 4px;
   @include smartphone{
     border-bottom: 2px solid #e33c38;
   }
