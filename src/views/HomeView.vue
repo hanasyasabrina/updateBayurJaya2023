@@ -129,46 +129,86 @@ export default {
           url:"partners-8.png",
           tag:"partners",
         },
-        // {
-        //   url:"partners-9.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-10.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-11.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-12.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-13.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-14.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-15.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-16.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-17.png",
-        //   tag:"partners",
-        // },
-        // {
-        //   url:"partners-18.png",
-        //   tag:"partners",
-        // }
+        {
+          url:"partners-9.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-10.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-11.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-12.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-13.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-14.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-15.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-16.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-17.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-18.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-19.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-20.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-21.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-22.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-23.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-24.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-25.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-26.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-27.png",
+          tag:"partners",
+        },
+        {
+          url:"partners-28.png",
+          tag:"partners",
+        },
       ]
     }
   },
