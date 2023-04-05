@@ -57,7 +57,7 @@
             <div class="swiper swiper-sipil">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoSipil" :key="key">
-                    <img :src="require(`../assets/sipilTenaga/${index.url}`)"/>
+                    <img :src="require(`../assets/gallery/sipilTenaga/${index.url}`)"/>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
             <div class="swiper swiper-hdd">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(index, key) in dataFotoHdd" :key="key">
-                    <img :src="require(`../assets/sipilTenaga/${index.url}`)"/>
+                    <img :src="require(`../assets/gallery/sipilTenaga/${index.url}`)"/>
                 </div>
               </div>
             </div>
@@ -493,7 +493,8 @@
           {
             url:"Hole7.jpg",
             category: "hdd",
-          }],
+          }
+        ],
 
         
       }
