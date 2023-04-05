@@ -23,20 +23,16 @@
       </nav>
     </div>
     <router-view/>
-    <!-- <home-view></home-view> -->
     <footer-view/>
   </div>
 </template>
 
 <script>
-// import HomeView from '@/views/HomeView.vue'
 import FooterView from '@/views/FooterView.vue'
 
 export default {
   name: 'MasterVue',
   components: {
-    // HelloWorld
-    // HomeView
     FooterView
   },
   data(){
@@ -58,8 +54,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
-  /* color: #fff; */
   background-color: #0A2753;
 }
 .header{
@@ -70,7 +64,6 @@ export default {
   &__bottom{
     background-color: white;
     font-family: 'Montserrat';
-    // font-size: 24px;
   }
 
   &--logo{

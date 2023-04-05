@@ -322,11 +322,6 @@ export default {
   &--title{
       font-family: 'Montserrat';
     }
-
-  // &--title_isi{
-  //    font-family: 'Cabin';
-  //    letter-spacing: 2px;
-  //  }
   &__desc{
     font-family: 'Cabin';
     &--title{
@@ -348,7 +343,6 @@ export default {
       border-radius: 4px;
       font-family: 'Cabin';
       letter-spacing: 4px;
-      // max-width: 165px;
       cursor: pointer;
       @include smartphone{
         padding: 20px 48px;
@@ -449,7 +443,6 @@ export default {
 .swiper-button-next,.swiper-button-prev{
     top: -100px;
     box-shadow: 0px 2px 30px rgba(0,0,0,.4);
-    // @include smartphone{ top: -95px;}
   }
   .swiper-button-next{
     right: 12%;
@@ -506,7 +499,6 @@ export default {
     &.swiper-slide-active {
       background:white;
       opacity:1;
-      // transform: scale(1);
       z-index: 3;
       @include smartphone{
         transform: scale(.8);
@@ -546,10 +538,4 @@ img{
 .font-isi{
   font-family: 'Cabin';
 }
-
-
-
-
-
-
 </style>

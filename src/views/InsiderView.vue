@@ -30,7 +30,6 @@
   export default {
     name: 'AboutView',
     components: {
-      // HelloWorld
     },
     data(){
       return{
