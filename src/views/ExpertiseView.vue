@@ -193,12 +193,12 @@
       &:before{
         content: "";
         position: absolute;
-        bottom: -100px;
-        right: 50px;
+        bottom: -60px;
+        right: 16px;
         background: #0a2753;
         border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         @include smartphone{
           display: none;
         }
