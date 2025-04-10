@@ -4,21 +4,21 @@
       <div class="header__top h-full rounded-t-2xl w-full text-white flex flex-row px-6 items-center">
         <div class="flex justify-center py-4 font-bold">PT. Bayur Jaya</div>
         <div class="flex flex-col xl:flex-row ml-auto py-4 gap-1 xl:gap-10 text-sm xl:text-base">
-          <div class="hide-mobile"><a href="mailto:info@bayurjaya.co.id?subject=Mail from Our Site">info@bayurjaya.co.id</a></div>
+          <div class="hide-mobile"><a href="mailto:info@bayurjaya.co.id?subject=Mail from Our Site">info@bayurjaya.com</a></div>
           <div class="hide-mobile"><a href="tel:0215526610">Call +62 21 552 6610</a></div>
           <div class="hide-mobile">Tangerang</div>
           <div><router-link to="/contact">Contact</router-link></div>
         </div>
       </div>
-      <div class="header__bottom w-full px-6" :class="[active? 'fixed top-0 left-0 rounded-none z-[12] duration-100' : 'relative rounded-t-2xl duration-150']">
+      <div class="header__bottom w-full px-6 transition-all" :class="[active? 'fixed top-0 left-0 rounded-none z-[12] duration-100' : 'relative rounded-t-2xl duration-150']">
         <nav class="flex justify-center items-center flex-row" :class="[active? 'py-4' : 'py-6']">
           <div class="header--logo" ></div>
           <div class="flex h-20 xl:h-12 xl:ml-auto gap-8 menu-scroll-mobile text-base xl:text-xl items-center">
             <router-link class="p-1" to="/">Home</router-link>
             <router-link class="p-1" to="/expertise">Expertise</router-link>
             <router-link class="p-1" to="/gallery">Gallery</router-link>
-            <router-link class="p-1" to="/about">Insider</router-link>
-            <router-link class="p-1" to="/overons">Over ons</router-link>
+            <router-link class="p-1" to="/about">About</router-link>
+            <!-- <router-link class="p-1" to="/overons">Over ons</router-link> -->
           </div>
         </nav>
       </div>

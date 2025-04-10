@@ -1,6 +1,6 @@
 <template>
   <div class="home relative w-full px-4 lg:px-0">
-    <div class="home--catalog flex flex-col justify-center items-center w-full mb-14">
+    <div class="home--catalog flex flex-col justify-center items-center w-full mb-12">
           <div class="home--title my-8 lg:mb-8 text-5xl text-center max-w-5xl not-italic font-bold">Build On Safety Is Our Foundation</div>
           <div class="home__desc home__desc--title text-center w-full flex max-w-screen-lg font-normal text-base text-center"><p>Kami adalah spesialis Jasa Konstruksi, Pengadaan Barang & Jasa dan Perdagangan Umum untuk pekerjaan dalam bidang Mekanikal & Elektrikal, Sipil, Telematika dan Jasa lainnya. Kami bangga dapat memberikan kualitas dan solusi luar biasa untuk klien terkemuka di seluruh Indonesia.</p></div>
     </div>
@@ -32,7 +32,7 @@
         <div class="home--catalog4 lg:justify-center lg:max-w-5xl rounded-b lg:rounded-r flex flex-col leading-normal">
           <div class="flex flex-col lg:mb-7 lg:ml-14">
             <div class="home--title text-gray-900 font-bold lg:text-6xl text-2xl text-left mt-6">Sungkono</div>
-              <div class="home--title font-bold text-gray-400 text-left lg:text-2xl text-xl mt-6">Owner</div>
+              <div class="home--title font-bold text-gray-400 text-left lg:text-2xl text-xl mt-6">Founder</div>
               <div class="border-solid border border-blue-900 lg:max-w-xs max-w-[100px] mb-4"></div>
               <div class="home__desc--owner text-base text-left max-w-xl">Kami berkomitmen untuk memberikan yang terbaik kepada anda dengan memperhatikan keselamatan, kualitas dan kepuasan dengan terus memperbarui sistem kami untuk memastikan project berjalan lancar dan efisien.</div>
           </div>

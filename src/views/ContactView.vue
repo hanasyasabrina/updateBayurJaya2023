@@ -9,7 +9,7 @@
             <div class="contact--title_isi text-base text-justify w-60 mb-6">
               <img class="img--asset float float-left mb-4 mr-4" :src="require('../assets/ornament/pin.png')">Jl. Raya Bayur No. 72 Periuk Jaya Tangerang Banten 15131</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
-              <img class="img--asset float float-left mb-4 mr-4" :src="require('../assets/ornament/mail.png')"><a href="mailto:info@bayurjaya.co.id?subject=Mail from Our Site">info@bayurjaya.co.id</a></div>
+              <img class="img--asset float float-left mb-4 mr-4" :src="require('../assets/ornament/mail.png')"><a href="mailto:info@bayurjaya.com?subject=Mail from Our Site">info@bayurjaya.com</a></div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/telephone.png')"><a href="tel:0215526610">+62 21 552 6610</a></div>
               <div class="contact--title_isi text-base text-justify w-60 mb-4">
@@ -20,7 +20,7 @@
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-8 mr-4" :src="require('../assets/ornament/pin.png')">Kp. Sekarwangi No. 39-40 Neglasari Tangerang Banten 15129</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
-              <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/mail.png')"><a href="mailto:info@bayurjaya.co.id?subject=Mail from Our Site">info@bayurjaya.co.id</a></div>
+              <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/mail.png')"><a href="mailto:info@bayurjaya.com?subject=Mail from Our Site">info@bayurjaya.com</a></div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/telephone.png')"><a href="tel:0215526610">+62 21 552 6610</a></div>
               <div class="contact--title_isi text-base text-justify w-60 mb-4">
@@ -31,7 +31,7 @@
             <div class="contact--title_isi text-base text-justify w-60 mb-6">
               <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/pin.png')">Jl. Mandanau Blok A5 No 29 Tangerang Banten 15133</div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
-              <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/mail.png')"><a href="mailto:info@bayurjaya.co.id?subject=Mail from Our Site">info@bayurjaya.co.id</a></div>
+              <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/mail.png')"><a href="mailto:info@bayurjaya.com?subject=Mail from Our Site">info@bayurjaya.com</a></div>
             <div class="contact--title_isi text-base text-justify w-60 mb-4">
               <img class="img--asset float-left mb-4 mr-4" :src="require('../assets/ornament/telephone.png')"><a href="tel:0215907462">+62 21 590 7462</a></div>
               <div class="contact--title_isi text-base text-justify w-60 mb-4">
